@@ -108,6 +108,7 @@ body {
 
 .password-container {
 	display: flex;
-	justify-content: end;
+	justify-content: space-between;
 	margin-bottom: 1rem;
+	flex-wrap: wrap;
 }
