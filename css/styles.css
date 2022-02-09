@@ -26,31 +26,27 @@ body {
 	padding: 1.5rem;
 }
 
-.header {
+.grid-container .header {
 	grid-column: 1/13;
 	grid-row: 1/2;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 0.05rem solid var(--cta-color);
 }
 
-.nav {
+.grid-container .nav {
 	grid-column: 1/3;
 	grid-row: 2/12;
 }
 
-.main {
+.grid-container .main {
 	grid-column: 3/11;
 	grid-row: 2/12;
 }
 
-.aside {
+.grid-container .aside {
 	grid-column: 11/13;
 	grid-row: 2/12;
 }
 
-.footer {
+.grid-container .footer {
 	grid-column: 1/13;
 	grid-row: 12/13;
 }
@@ -63,6 +59,12 @@ body {
 
 /* ||  Header Brand Info - logo and name */
 
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0.05rem solid var(--cta-color);
+}
 .brand-info {
 	display: flex;
 	justify-content: center;
@@ -107,6 +109,7 @@ body {
 
 .social-icon-container {
 	display: flex;
+	align-items: center;
 	gap: 2rem;
 	color: inherit;
 	color: var(--secondary-color);
@@ -122,6 +125,11 @@ body {
 
 .fas {
 	cursor: pointer;
+}
+
+.social {
+	cursor: pointer;
+	font-size: 2rem;
 }
 
 .header-link-active {
@@ -215,7 +223,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
-	border-top: 1px solid var(--cta-color);
+	border-top: 0.05rem solid var(--cta-color);
+	padding: 2rem;
 }
 .footer-copyright {
 	font-size: 1.2rem;
