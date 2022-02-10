@@ -136,19 +136,6 @@ body {
 	font-size: 1.8rem;
 }
 
-/* Removed Aftrewards */
-.profile-vertical-tabs-container .vertical-tabs-btn-active {
-	border-right: 0.5rem solid var(--cta-color);
-	border-radius: 0.5rem;
-	background: var(--primary-color);
-}
-
-/* Removed Aftrewards */
-.profile-vertical-tabs-container .vertical-tabs-content {
-	/* flex-grow: 1; */
-}
-
-/* Removed Aftrewards */
 .profile-container {
 	background: var(--primary-color);
 	padding: 1rem;
@@ -174,13 +161,7 @@ body {
 	padding: 0.7rem;
 }
 
-/* Removed Afterwards */
-.basic-card {
-	width: max-content;
-	height: auto;
-}
-
-.basic-card > * {
+.profile-vertical-tabs-container .basic-card > * {
 	padding: 0.4rem;
 }
 
