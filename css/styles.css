@@ -235,11 +235,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
-	border-top: 0.05rem solid var(--cta-color);
 	padding: 2rem;
 }
 
 .footer-shadow {
+	box-shadow: 0 0 0.8rem 0.2rem var(--shadow-color);
 }
 .footer-copyright {
 	font-size: 1.2rem;
