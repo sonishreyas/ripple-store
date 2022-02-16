@@ -63,6 +63,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: 0.05rem solid var(--cta-color);
 	position: sticky;
 	top: 0;
 	left: 0;
@@ -235,6 +236,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
+	border-top: 0.05rem solid var(--cta-color);
+	padding: 2rem;
 	padding: 2rem;
 }
 
