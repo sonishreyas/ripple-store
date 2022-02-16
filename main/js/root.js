@@ -2,6 +2,8 @@ const themeIcon = document.querySelector(".theme-icon");
 const rippleLogo = document.querySelectorAll(".brand-logo");
 const getCurrentTheme = () => {
 	let theme = window.matchMedia("(prefers-color-scheme): light").matches
+		? "light"
+		: "dark";
 		? "dark"
 		: "light";
 	localStorage.getItem("ripple.theme")
