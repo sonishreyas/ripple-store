@@ -4,8 +4,6 @@ const getCurrentTheme = () => {
 	let theme = window.matchMedia("(prefers-color-scheme): light").matches
 		? "light"
 		: "dark";
-		? "dark"
-		: "light";
 	localStorage.getItem("ripple.theme")
 		? (theme = localStorage.getItem("ripple.theme"))
 		: null;

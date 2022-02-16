@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Shreyas c. Soni">
+    <!-- <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" /> -->
+    <link rel="stylesheet" href="../../css/components.css">
+    <title>Products - Ripple Store</title>
+</head>
+
+<body>
+    <div class="grid-3-rows">
+
+        <!-- || Header -->
+        <header class="header">
+            <div class="brand-info">
+                <section>
+                    <i class="fas fa-bars header-nav-icon"></i>
+                </section>
+                <a href="https://ripple-ui.netlify.app/" class="no-link">
+                    <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
+                        alt="Logo of ripple UI" class="brand-logo" />
+                    <sub class="brand-name">Ripple Store</sub>
+                </a>
+                <ul class="no-list spaced-list header-nav">
+                    <li><a href="https://ripple-store.netlify.app/" class="no-link">Home</a></li>
+                    <li><a href="https://ripple-store.netlify.app/pages/products/products.html"
+                            class="no-link header-link-active">Products</a></li>
+                </ul>
+            </div>
+            <div class="social-icon-container">
+                <ul class="no-list spaced-list">
+                    <li>
+                        <form class="input-form">
+                            <section class="input-container input-with-icon">
+                                <input id="search" class="textbox-content" type="text" name="search"
+                                    placeholder="Search..." aria-label="Search Products here" />
+                                <i class="fas fa-search search-icon"></i>
+                            </section>
+                        </form>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://ripple-store.netlify.app/pages/profile/profile.html" aria-label="View Profile"
+                            class="no-link"><i class="fas fa-user social"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://ripple-store.netlify.app/pages/wishlist/wishlist.html"
+                            aria-label="View Wishlist" class="no-link"><i class="fas fa-heart social"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ripple-store.netlify.app/pages/cart/cart.html" aria-label="View Cart"
+                            class="no-link"><i class="fas fa-shopping-cart social"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
+                            target="_blank" aria-label="Login/Register" class="no-link">
+                            <i class="fa-solid fa-right-to-bracket social" aria-label="Login/Register icon"></i></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-sun theme-icon social" aria-label="dark/light theme icon"></i>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- || Main -->
+        <main class="main grid-30-70-column">
+            <article class="grid-col-30">
+                <div class="form-container">
+                    <section class="form-header">
+                        <h3 class="form-heading">Filters</h3>
+                        <a href="#" class="link-btn">Clear All</a>
+                    </section>
+                    <ul class="radio-btn-container">
+                        <li class="no-list form-heading">Sort by</li class="no-list">
+                        <li class="no-list">
+                            <input class="radio-btn" type="radio" id="radio-btn" name="radio-btn"
+                                value="Price Low to High" /> Price:
+                            Low to High
+                        </li class="no-list">
+                        <li class="no-list">
+                            <input class="radio-btn" type="radio" id="radio-btn" name="radio-btn"
+                                value="Price Low to High" /> Price:
+                            High to Low
+                        </li class="no-list">
+                        <li class="no-list">
+                            <input class="radio-btn" type="radio" name="radio-btn" id="radio-btn"
+                                value="Customer Rating" /> Customer
+                            Rating
+                        </li class="no-list">
+                        <li class="no-list">
+                            <input class="radio-btn" type="radio" name="radio-btn" id="radio-btn"
+                                value="Better Discount" /> Better
+                            Discount
+                        </li class="no-list">
+                    </ul>
+                    <ul class="checkbox-btn-container">
+                        <li class="no-list form-heading">Categories</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Casual Shoes" />
+                            Casual Shoes</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sports Shoes" />
+                            Sports Shoes</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Formal Shoes" />
+                            Formal Shoes</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sneakers" /> Sneakers
+                        </li class="no-list">
+                        <li class="no-list">
+                            <input class="checkbox-btn" type="checkbox" value="Sandles & Floaters" />
+                            Sandles & Floaters
+                        </li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Socks" /> Socks</li
+                            class="no-list">
+                    </ul>
+
+                    <ul class="checkbox-btn-container">
+                        <li class="no-list form-heading">Brand</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Adidas" /> Adidas</li
+                            class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Puma" /> Puma</li
+                            class="no-list">
+                        <li class="no-list">
+                            <input class="checkbox-btn" type="checkbox" value="U.S. Polo Assn." /> U.S. Polo Assn.
+                        </li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Woodland" /> Woodland
+                        </li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Bata" /> Bata</li
+                            class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Roadster" /> Roadster
+                        </li class="no-list">
+                    </ul>
+
+                    <ul class="checkbox-btn-container">
+                        <li class="no-list form-heading">Price</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Under ₹1000" /> Under
+                            ₹1000</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹1000 to ₹2000" />
+                            ₹1000 to ₹2000</li class="no-list">
+                        <li class="no-list">
+                            <input class="checkbox-btn" type="checkbox" value="₹2000 to ₹3000" />
+                            ₹2000 to ₹3000
+                        </li class="no-list">
+                        <li class="no-list">
+                            <input class="checkbox-btn" type="checkbox" value="₹3000 to ₹4000" />
+                            ₹3000 to ₹4000
+                        </li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹4000 to ₹5000" />
+                            ₹4000 to ₹5000</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹5000+" /> ₹5000+</li
+                            class="no-list">
+                    </ul>
+
+                    <ul class="checkbox-btn-container">
+                        <li class="no-list form-heading">Rating</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="4 and above" /> 4 and
+                            above</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="3 and above" /> 3 and
+                            above</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="2 and above" /> 2 and
+                            above</li class="no-list">
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="1 and above" /> 1 and
+                            above</li class="no-list">
+                    </ul>
+                </div>
+            </article>
+            <article class="grid-col-70 ">
+                <div class="flex-container">
+                    <article class="card vertical card-shadow">
+                        <section class="card-image-container flex-jc-ac">
+                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                alt="Puma Sneakers" class="card-image" />
+                        </section>
+                        <button class="card-btn card-wishlist">
+                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                            <p class="wishlist-text">Add to wishlist</p>
+                        </button>
+                        <section class="card-content">
+                            <h1 class="card-title">Puma White Sneakers</h1>
+                            <p class="card-category">Men Sneakers</p>
+                            <span class="card-price-tag">
+                                <p>Rs. 2999</p>
+                                <strike>5999</strike>
+                                <p class="discount">(50%)</p>
+                            </span>
+                        </section>
+                        <section class="card-tag">
+                            <span class="card-review">
+                                <p>4</p>
+                                <span class="review-star">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </span>
+                        </section>
+                        <button class="card-btn card-cart">
+                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            <p class="cart-text">Add to Cart</p>
+                        </button>
+                    </article>
+                    <article class="card vertical card-shadow">
+                        <section class="card-image-container flex-jc-ac">
+                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                alt="Puma Sneakers" class="card-image" />
+                        </section>
+                        <button class="card-btn card-wishlist">
+                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                            <p class="wishlist-text">Add to wishlist</p>
+                        </button>
+                        <section class="card-content">
+                            <h1 class="card-title">Puma White Sneakers</h1>
+                            <p class="card-category">Men Sneakers</p>
+                            <span class="card-price-tag">
+                                <p>Rs. 2999</p>
+                                <strike>5999</strike>
+                                <p class="discount">(50%)</p>
+                            </span>
+                        </section>
+                        <section class="card-tag">
+                            <span class="card-review">
+                                <p>4</p>
+                                <span class="review-star">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </span>
+                        </section>
+                        <button class="card-btn card-cart">
+                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            <p class="cart-text">Add to Cart</p>
+                        </button>
+                    </article>
+                    <article class="card vertical card-shadow">
+                        <section class="card-image-container flex-jc-ac">
+                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                alt="Puma Sneakers" class="card-image" />
+                        </section>
+                        <button class="card-btn card-wishlist">
+                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                            <p class="wishlist-text">Add to wishlist</p>
+                        </button>
+                        <section class="card-content">
+                            <h1 class="card-title">Puma White Sneakers</h1>
+                            <p class="card-category">Men Sneakers</p>
+                            <span class="card-price-tag">
+                                <p>Rs. 2999</p>
+                                <strike>5999</strike>
+                                <p class="discount">(50%)</p>
+                            </span>
+                        </section>
+                        <section class="card-tag">
+                            <span class="card-review">
+                                <p>4</p>
+                                <span class="review-star">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </span>
+                        </section>
+                        <button class="card-btn card-cart">
+                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            <p class="cart-text">Add to Cart</p>
+                        </button>
+                    </article>
+                    <article class="card vertical card-shadow">
+                        <section class="card-image-container flex-jc-ac">
+                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                alt="Puma Sneakers" class="card-image" />
+                        </section>
+                        <button class="card-btn card-wishlist">
+                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                            <p class="wishlist-text">Add to wishlist</p>
+                        </button>
+                        <section class="card-content">
+                            <h1 class="card-title">Puma White Sneakers</h1>
+                            <p class="card-category">Men Sneakers</p>
+                            <span class="card-price-tag">
+                                <p>Rs. 2999</p>
+                                <strike>5999</strike>
+                                <p class="discount">(50%)</p>
+                            </span>
+                        </section>
+                        <section class="card-tag">
+                            <span class="card-review">
+                                <p>4</p>
+                                <span class="review-star">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </span>
+                        </section>
+                        <button class="card-btn card-cart">
+                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            <p class="cart-text">Add to Cart</p>
+                        </button>
+                    </article>
+                    <article class="card vertical card-shadow">
+                        <section class="card-image-container flex-jc-ac">
+                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                alt="Puma Sneakers" class="card-image" />
+                        </section>
+                        <button class="card-btn card-wishlist">
+                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                            <p class="wishlist-text">Add to wishlist</p>
+                        </button>
+                        <section class="card-content">
+                            <h1 class="card-title">Puma White Sneakers</h1>
+                            <p class="card-category">Men Sneakers</p>
+                            <span class="card-price-tag">
+                                <p>Rs. 2999</p>
+                                <strike>5999</strike>
+                                <p class="discount">(50%)</p>
+                            </span>
+                        </section>
+                        <section class="card-tag">
+                            <span class="card-review">
+                                <p>4</p>
+                                <span class="review-star">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </span>
+                        </section>
+                        <button class="card-btn card-cart">
+                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            <p class="cart-text">Add to Cart</p>
+                        </button>
+                    </article>
+                    <article class="card vertical card-shadow">
+                        <section class="card-image-container flex-jc-ac">
+                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                alt="Puma Sneakers" class="card-image" />
+                        </section>
+                        <button class="card-btn card-wishlist">
+                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                            <p class="wishlist-text">Add to wishlist</p>
+                        </button>
+                        <section class="card-content">
+                            <h1 class="card-title">Puma White Sneakers</h1>
+                            <p class="card-category">Men Sneakers</p>
+                            <span class="card-price-tag">
+                                <p>Rs. 2999</p>
+                                <strike>5999</strike>
+                                <p class="discount">(50%)</p>
+                            </span>
+                        </section>
+                        <section class="card-tag">
+                            <span class="card-review">
+                                <p>4</p>
+                                <span class="review-star">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </span>
+                        </section>
+                        <button class="card-btn card-cart">
+                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            <p class="cart-text">Add to Cart</p>
+                        </button>
+                    </article>
+                    <article class="card vertical card-shadow">
+                        <section class="card-image-container flex-jc-ac">
+                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                alt="Puma Sneakers" class="card-image" />
+                        </section>
+                        <button class="card-btn card-wishlist">
+                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                            <p class="wishlist-text">Add to wishlist</p>
+                        </button>
+                        <section class="card-content">
+                            <h1 class="card-title">Puma White Sneakers</h1>
+                            <p class="card-category">Men Sneakers</p>
+                            <span class="card-price-tag">
+                                <p>Rs. 2999</p>
+                                <strike>5999</strike>
+                                <p class="discount">(50%)</p>
+                            </span>
+                        </section>
+                        <section class="card-tag">
+                            <span class="card-review">
+                                <p>4</p>
+                                <span class="review-star">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </span>
+                        </section>
+                        <button class="card-btn card-cart">
+                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            <p class="cart-text">Add to Cart</p>
+                        </button>
+                    </article>
+                    <article class="card vertical card-shadow">
+                        <section class="card-image-container flex-jc-ac">
+                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                alt="Puma Sneakers" class="card-image" />
+                        </section>
+                        <button class="card-btn card-wishlist">
+                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                            <p class="wishlist-text">Add to wishlist</p>
+                        </button>
+                        <section class="card-content">
+                            <h1 class="card-title">Puma White Sneakers</h1>
+                            <p class="card-category">Men Sneakers</p>
+                            <span class="card-price-tag">
+                                <p>Rs. 2999</p>
+                                <strike>5999</strike>
+                                <p class="discount">(50%)</p>
+                            </span>
+                        </section>
+                        <section class="card-tag">
+                            <span class="card-review">
+                                <p>4</p>
+                                <span class="review-star">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </span>
+                        </section>
+                        <button class="card-btn card-cart">
+                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            <p class="cart-text">Add to Cart</p>
+                        </button>
+                    </article>
+                </div>
+                <div class="pagination">
+                    <button class="page-number">&lt</button>
+                    <button class="page-number">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                    <button class="page-number">4</button>
+                    <button class="page-number">5</button>
+                    <button class="page-number">&gt</button>
+                </div>
+
+            </article>
+            <!-- </section> -->
+        </main>
+
+        <!-- || Nav Bar -->
+        <nav class="nav">
+            <ul class="rui-drawer-content--list no-list">
+                <li class="rui-drawer-content rui-drawer-header inactive">
+                    <section>
+                        <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
+                            alt="Logo of ripple UI" class="brand-logo" />
+                        <sub class="brand-name">Ripple UI</sub>
+                    </section>
+                    <section>
+                        <i class="fas fa-angle-left close-drawer"></i>
+                    </section>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- || Footer -->
+        <footer class="footer">
+            <div class="social-icon-container">
+                <a href="https://github.com/sonishreyas" target="_blank" aria-label="View Github Profile"
+                    class="no-link"><i class="fab fa-github social"></i></a>
+                <a href="https://twitter.com/ShreyasSoni0204" target="_blank" aria-label="View Twitter Profile"
+                    class="no-link"><i class="fab fa-twitter social"></i></a>
+                <a href="https://www.linkedin.com/in/shreyas-soni-00752618b/" target="_blank"
+                    aria-label="View LinkedIn Profile" class="no-link"><i class="fab fa-linkedin-in social"></i></a>
+            </div>
+            <p class="footer-copyright"><span class="footer-copyright-icon"><i class="far fa-copyright"></i></span> 2022
+                Ripple UI</p>
+        </footer>
+    </div>
+    <script type="module" src="./src/js/index.js"></script>
+    <script src="../../main/js/root.js"></script>
+</body>
+
+</html>
