@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Shreyas c. Soni">
+    <!-- <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" /> -->
+    <link rel="stylesheet" href="../../css/components.css">
+    <title>Profile - Ripple Store</title>
+</head>
+
+<body>
+    <div class="grid-3-rows">
+
+        <!-- || Header -->
+        <header class="header">
+            <div class="brand-info">
+                <section>
+                    <i class="fas fa-bars header-nav-icon"></i>
+                </section>
+                <a href="https://ripple-ui.netlify.app/" class="no-link">
+                    <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
+                        alt="Logo of ripple UI" class="brand-logo" />
+                    <sub class="brand-name">Ripple Store</sub>
+                </a>
+                <ul class="no-list spaced-list header-nav">
+                    <li><a href="https://ripple-store.netlify.app/" class="no-link">Home</a></li>
+                    <li><a href="https://ripple-store.netlify.app/pages/products/products.html"
+                            class="no-link header-link-active">Products</a></li>
+                </ul>
+            </div>
+            <div class="social-icon-container">
+                <ul class="no-list spaced-list">
+                    <li>
+                        <form class="input-form">
+                            <section class="input-container input-with-icon">
+                                <input id="search" class="textbox-content" type="text" name="search"
+                                    placeholder="Search..." aria-label="Search Products here" />
+                                <i class="fas fa-search search-icon"></i>
+                            </section>
+                        </form>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://ripple-store.netlify.app/pages/profile/profile.html" aria-label="View Profile"
+                            class="no-link"><i class="fas fa-user social"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://ripple-store.netlify.app/pages/wishlist/wishlist.html"
+                            aria-label="View Wishlist" class="no-link"><i class="fas fa-heart social"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ripple-store.netlify.app/pages/cart/cart.html" aria-label="View Cart"
+                            class="no-link"><i class="fas fa-shopping-cart social"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
+                            target="_blank" aria-label="Login/Register" class="no-link">
+                            <i class="fa-solid fa-right-to-bracket social" aria-label="Login/Register icon"></i></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-sun theme-icon social" aria-label="dark/light theme icon"></i>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- || Main -->
+        <main class="main flex-jc-ac">
+            <section class="rui-main--heading-container no-border profile-vertical-tabs-container">
+                <article class="vertical-tabs-container">
+                    <article class="vertical-tabs-btn-container">
+                        <button class="tabs-btn">Profile</button>
+                        <button class="tabs-btn">Orders</button>
+                        <button class="tabs-btn">Address</button>
+                        <button class="tabs-btn">Settings</button>
+                    </article>
+                    <div class="vertical-tabs-content">
+                        <div class="profile-container">
+                            <div class="profile-header">
+                                <h1 class="profile-heading">Profile Details</h1>
+                            </div>
+                            <ul class="profile-list">
+                                <li class="no-list">
+                                    <article class="card basic-card .flex-jc-ac card-shadow">
+                                        <table class="table">
+                                            <tr class="table-row">
+                                                <th class="table-head">Name</th>
+                                                <td class="table-data">Shreyas Soni</td>
+                                            </tr>
+                                            <tr class="table-row">
+                                                <th class="table-head">Email</th>
+                                                <td class="table-data">sonishreyas10@gmail.com</td>
+                                            </tr>
+                                        </table>
+                                        <button class="primary-btn edit-profile-btn">Edit</button>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vertical-tabs-content orders-container">
+                        <div class="profile-container">
+                            <div class="profile-header">
+                                <h1 class="profile-heading">Orders</h1>
+                            </div>
+                            <ul class="profile-list">
+                                <li class="no-list">
+                                    <article class="card basic-card .flex-jc-ac card-shadow orders-card">
+                                        <h2 class="order-status">Order Confirmed</h2>
+                                        <p class="secondary-font">Sun Feb 06 2022</p>
+                                        <table class="table">
+                                            <tr class="table-row">
+                                                <th class="table-head">OrderId:</th>
+                                                <td class="table-data">6648065895632</td>
+                                            </tr>
+                                            <tr class="table-row">
+                                                <th class="table-head">Total:</th>
+                                                <td class="table-data">₹2999</td>
+                                            </tr>
+                                        </table>
+                                        <article class="card horizontal card-shadow">
+                                            <div class="horizontal-card-img--container flex-jc-ac">
+                                                <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                                    alt="Puma Sneakers" class="horizontal-card-img" />
+                                            </div>
+                                            <div class="horizontal-card-text--container">
+                                                <h1>Puma White Sneakers</h1>
+                                                <p>PUMA</p>
+                                                <hr />
+                                                <p>Size: 9</p>
+                                                <p>Qty: 1</p>
+                                            </div>
+                                        </article>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vertical-tabs-content address-container">
+                        <div class="profile-container">
+                            <div class="profile-header">
+                                <h1 class="profile-heading">Address</h1>
+                                <button class="primary-btn outline icon-text-btn margin-7px address-btn">
+                                    <span><i class="fas fa-plus"></i></span>
+                                    <p class="btn-text">Add new address</p>
+                                </button>
+                            </div>
+                            <ul class="profile-list">
+                                <li class="no-list">
+                                    <article class="card basic-card .flex-jc-ac card-shadow">
+                                        <h2 class="name">Shreyas Soni</h2>
+                                        <p class="address">
+                                            D-203, Nisarg Nirman, Kokne Chowk Pimple Saudagar
+                                        </p>
+                                        <p class="city">Pune</p>
+                                        <p class="state">Maharashtra</p>
+                                        <p class="country">India</p>
+                                        <p class="pincode">411027</p>
+                                        <section class="card-footer">
+                                            <button class="primary-btn edit-btn">Edit</button>
+                                            <button class="primary-btn outline delete-btn">Delete</button>
+                                        </section>
+                                    </article>
+                                </li>
+                            </ul>
+
+                            <div class="modal-container center">
+                                <h3 class="profile-heading">Add a new Address</h3>
+                                <form class="input-form">
+                                    <section class="input-container">
+                                        <input id="name" class="textbox-content" type="text" name="name" />
+                                        <label for="name" class="textbox-label">Name</label>
+                                    </section>
+                                    <section class="input-container">
+                                        <input id="address" class="textbox-content" type="text" name="address" />
+                                        <label for="address" class="textbox-label">Address</label>
+                                    </section>
+                                    <section class="input-container">
+                                        <input id="country" class="textbox-content" name="country" type="text" />
+                                        <label for="country" class="textbox-label">Country</label>
+                                    </section>
+
+                                    <section class="input-container">
+                                        <input id="state" class="textbox-content" name="state" type="text" />
+                                        <label for="state" class="textbox-label">State</label>
+                                    </section>
+                                    <section class="input-container">
+                                        <input id="city" class="textbox-content" type="text" name="city" />
+                                        <label for="city" class="textbox-label">City</label>
+                                    </section>
+                                    <section class="input-container">
+                                        <input id="pincode" class="textbox-content" type="number" name="pincode" />
+                                        <label for="pincode" class="textbox-label">Pincode</label>
+                                    </section>
+                                    <section class="card-footer">
+                                        <div class="primary-btn save-btn" type="button">Save</div>
+                                        <div class="primary-btn outline cancel-btn" type="button">
+                                            Cancel
+                                        </div>
+                                    </section>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-tabs-content settings-container">
+                        <div class="profile-container">
+                            <div class="profile-header">
+                                <h1 class="profile-heading">Settings</h1>
+                            </div>
+                            <ul class="profile-list">
+                                <li class="no-list">
+                                    <button class="primary-btn log-out-btn">Log Out</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- || Nav Bar -->
+        <nav class="nav">
+            <ul class="rui-drawer-content--list no-list">
+                <li class="rui-drawer-content rui-drawer-header inactive">
+                    <section>
+                        <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
+                            alt="Logo of ripple UI" class="brand-logo" />
+                        <sub class="brand-name">Ripple UI</sub>
+                    </section>
+                    <section>
+                        <i class="fas fa-angle-left close-drawer"></i>
+                    </section>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- || Footer -->
+        <footer class="footer">
+            <div class="social-icon-container">
+                <a href="https://github.com/sonishreyas" target="_blank" aria-label="View Github Profile"
+                    class="no-link"><i class="fab fa-github social"></i></a>
+                <a href="https://twitter.com/ShreyasSoni0204" target="_blank" aria-label="View Twitter Profile"
+                    class="no-link"><i class="fab fa-twitter social"></i></a>
+                <a href="https://www.linkedin.com/in/shreyas-soni-00752618b/" target="_blank"
+                    aria-label="View LinkedIn Profile" class="no-link"><i class="fab fa-linkedin-in social"></i></a>
+            </div>
+            <p class="footer-copyright"><span class="footer-copyright-icon"><i class="far fa-copyright"></i></span> 2022
+                Ripple UI</p>
+        </footer>
+    </div>
+    <script type="module" src="./src/js/index.js"></script>
+    <script src="../../main/js/root.js"></script>
+</body>
+
+</html>

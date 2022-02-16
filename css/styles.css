@@ -64,6 +64,15 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 0.05rem solid var(--cta-color);
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: var(--header-z-index);
+	background-color: var(--primary-color);
+}
+
+.header-shadow {
+	box-shadow: 0 0 0.8rem 0.2rem var(--shadow-color);
 }
 .brand-info {
 	display: flex;
@@ -229,6 +238,10 @@ body {
 	gap: 1rem;
 	border-top: 0.05rem solid var(--cta-color);
 	padding: 2rem;
+}
+
+.footer-shadow {
+	box-shadow: 0 0 0.8rem 0.2rem var(--shadow-color);
 }
 .footer-copyright {
 	font-size: 1.2rem;
