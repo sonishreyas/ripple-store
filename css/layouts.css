@@ -25,7 +25,6 @@
 	grid-area: g-row-3;
 }
 
-
 .grid-30-70-column {
 	display: grid;
 	grid-template-areas: "grid-col-30 grid-col-70 grid-col-70 grid-col-70";
