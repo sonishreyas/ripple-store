@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Shreyas c. Soni">
+    <!-- <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" /> -->
+    <link rel="stylesheet" href="../../css/components.css">
+    <title>Product Details - Ripple Store</title>
+</head>
+
+<body>
+    <div class="grid-3-rows">
+
+        <!-- || Header -->
+        <header class="header header-shadow">
+            <div class="brand-info">
+                <section>
+                    <i class="fas fa-bars header-nav-icon"></i>
+                </section>
+                <a href="https://ripple-store.netlify.app/" class="no-link">
+                    <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
+                        alt="Logo of ripple UI" class="brand-logo" />
+                    <sub class="brand-name">Ripple Store</sub>
+                </a>
+                <ul class="no-list spaced-list header-nav">
+                    <li><a href="https://ripple-store.netlify.app/" class="no-link">Home</a></li>
+                    <li><a href="https://ripple-store.netlify.app/pages/products/products.html"
+                            class="no-link">Products</a></li>
+                </ul>
+            </div>
+            <div class="social-icon-container">
+                <ul class="no-list spaced-list">
+                    <li>
+                        <form class="input-form">
+                            <section class="input-container input-with-icon">
+                                <input id="search" class="textbox-content" type="text" name="search"
+                                    placeholder="Search..." aria-label="Search Products here" />
+                                <i class="fas fa-search search-icon"></i>
+                            </section>
+                        </form>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://ripple-store.netlify.app/pages/profile/profile.html" aria-label="View Profile"
+                            class="no-link"><i class="fas fa-user social"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://ripple-store.netlify.app/pages/wishlist/wishlist.html"
+                            aria-label="View Wishlist" class="no-link"><i class="fas fa-heart social"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ripple-store.netlify.app/pages/cart/cart.html" aria-label="View Cart"
+                            class="no-link"><i class="fas fa-shopping-cart social"></i></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-sun theme-icon social" aria-label="dark/light theme icon"></i>
+                    </li>
+                    <li><a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
+                            target="_blank" aria-label="Login/Register" class="no-link primary-btn social">Login </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- || Main -->
+        <main class="main flex-jc-ac">
+            <section class="rui-main--heading-container no-border ">
+                <article class="card horizontal card-shadow">
+                    <div class="horizontal-card-img--container flex-jc-ac">
+                        <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                            alt="Puma Sneakers" class="horizontal-card-img" />
+                    </div>
+                    <div class="horizontal-card-text--container">
+                        <h1>Puma White Sneakers</h1>
+                        <p>PUMA</p>
+                        <span class="rating flex-ac">
+                            <i class="fas fa-star set"></i>
+                            <i class="fas fa-star set"></i>
+                            <i class="fas fa-star set"></i>
+                            <i class="fas fa-star set"></i>
+                            <i class="fas fa-star unset"></i>
+                            <p class="secondary-font">| (400 reviews)</p>
+                        </span>
+                        <div class="pricing flex-ac">
+                            <h3>Rs. 2999</h3>
+                            <p class="secondary-font">
+                                <strike>Rs. 5999</strike>
+                            </p>
+                            <p class="discount">( Rs. 3000 OFF )</p>
+                        </div>
+                        <p>Select Size (UK Size)</p>
+                        <div class="sizes-container">
+                            <button class="size">6</button>
+                            <button class="size">7</button>
+                            <button class="size">8</button>
+                            <button class="size">9</button>
+                            <button class="size">10</button>
+                            <button class="size">11</button>
+                        </div>
+                        <div class="horizontal-card-btn-container flex-ac">
+                            <button class="card-btn card-cart horizontal-card-btn-primary">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                            </button>
+                            <button class="card-btn horizontal-card-btn-secondary">
+                                <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                <p class="wishlist-text">Add to wishlist</p>
+                            </button>
+                        </div>
+                        <div class="horizontal-card-details-container">
+                            <h3>Specifications</h3>
+                            <div class="specification-column flex-ac">
+                                <form class="specifications-form">
+                                    <section class="specification">
+                                        <label for="type" class="specification-key">Type</label>
+                                        <input type="text" value="Sneakers" class="specification-value" readonly
+                                            aria-label="Shoes Type" />
+                                    </section>
+                                    <section class="specification">
+                                        <label for="type" class="specification-key">Pattern</label>
+                                        <input type="text" value="Solid" class="specification-value" readonly
+                                            aria-label="Shoes pattern" />
+                                    </section>
+                                    <section class="specification">
+                                        <label for="type" class="specification-key">Shoe Width</label>
+                                        <input type="text" value="Regular" class="specification-value" readonly
+                                            aria-label="Shoe Width" />
+                                    </section>
+                                    <section class="specification">
+                                        <label for="type" class="specification-key">Insole</label>
+                                        <input type="text" value="Comfort Insole" class="specification-value" readonly
+                                            aria-label="Shoe Insole Material" />
+                                    </section>
+                                </form>
+                                <form action="" class="specifications-form">
+                                    <section class="specification">
+                                        <label for="type" class="specification-key">Sole Material</label>
+                                        <input type="text" value="Rubber" class="specification-value" readonly
+                                            aria-label="Shoe Sole Material" />
+                                    </section>
+                                    <section class="specification">
+                                        <label for="type" class="specification-key">Warranty</label>
+                                        <input type="text" value="3 months" class="specification-value" readonly
+                                            aria-label="Shoes Warranty" />
+                                    </section>
+                                    <section class="specification">
+                                        <label for="type" class="specification-key">Toe Shape</label>
+                                        <input type="text" value="Round Toe" class="specification-value" readonly
+                                            aria-label="Toe Shape" />
+                                    </section>
+                                    <section class="specification">
+                                        <label for="type" class="specification-key">Occasion</label>
+                                        <input type="text" value="Everyday" class="specification-value" readonly
+                                            aria-label="Occasions" />
+                                    </section>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- || Nav Bar -->
+        <nav class="nav">
+            <ul class="rui-drawer-content--list no-list">
+                <li class="rui-drawer-content rui-drawer-header inactive">
+                    <section>
+                        <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
+                            alt="Logo of ripple UI" class="brand-logo" />
+                        <sub class="brand-name">Ripple UI</sub>
+                    </section>
+                    <section>
+                        <i class="fas fa-angle-left close-drawer"></i>
+                    </section>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- || Footer -->
+        <footer class="footer footer-shadow">
+            <div class="social-icon-container">
+                <a href="https://github.com/sonishreyas" target="_blank" aria-label="View Github Profile"
+                    class="no-link"><i class="fab fa-github social"></i></a>
+                <a href="https://twitter.com/ShreyasSoni0204" target="_blank" aria-label="View Twitter Profile"
+                    class="no-link"><i class="fab fa-twitter social"></i></a>
+                <a href="https://www.linkedin.com/in/shreyas-soni-00752618b/" target="_blank"
+                    aria-label="View LinkedIn Profile" class="no-link"><i class="fab fa-linkedin-in social"></i></a>
+            </div>
+            <p class="footer-copyright"><span class="footer-copyright-icon"><i class="far fa-copyright"></i></span> 2022
+                Ripple UI</p>
+        </footer>
+    </div>
+    <script type="module" src="./src/js/index.js"></script>
+    <script src="../../main/js/root.js"></script>
+</body>
+
+</html>
