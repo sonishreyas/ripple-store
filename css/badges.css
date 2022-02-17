@@ -4,28 +4,21 @@ body {
 
 /* || Icon Badge Style */
 .badge-container {
-	display: flex;
-	justify-content: center;
-	height: max-content;
-	padding: 1rem;
-	flex-wrap: wrap;
-	gap: 2rem;
-	border-radius: 1rem;
+	width: 100%;
+	height: auto;
 }
 
 .badge-alignment--container {
 	color: var(--cta-color);
-	display: flex;
-	justify-content: center;
-	margin: 2rem;
-	gap: 4rem;
-	padding-bottom: 2rem;
+	width: 100%;
+	height: auto;
 }
 
-.badge-alignment > * {
-	padding: 1rem;
-	margin: 1rem;
+.badge-alignment {
+	width: 100%;
+	height: auto;
 }
+
 .badge {
 	height: auto;
 	width: max-content;
@@ -41,17 +34,12 @@ body {
 
 .badge-text {
 	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	background: var(--cta-color);
-	color: var(--secondary-color);
+	color: var(--tertiary-color);
 	font-weight: bold;
 	font-size: 0.9rem;
 	width: 2rem;
 	height: 2rem;
-	padding: 0.5rem;
-	border-radius: 50%;
 }
 
 .top {
@@ -72,28 +60,19 @@ body {
 /* || Button Badge */
 
 .badge-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	border-radius: 1rem;
-	border: 0;
+	border: var(--b-0);
 	background: var(--cta-color);
-	color: var(--secondary-color);
+	color: var(--tertiary-color);
 	font-family: inherit;
 	font-size: inherit;
-	padding: 1rem;
 }
 
 .badge-btn--counter {
 	background: var(--cta-color);
-	color: var(--secondary-color);
-	padding: 0.4rem;
-	margin: auto;
-	border-radius: 0.3rem;
+	color: var(--tertiary-color);
 }
 
 .badge-btn:hover {
-	background-color: var(--secondary-color);
+	background-color: var(--tertiary-color);
 	color: var(--cta-color);
 }

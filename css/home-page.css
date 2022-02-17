@@ -1,10 +1,11 @@
-.home-heading {
-	margin: 2rem 0;
-	border-bottom: 0.2rem solid var(--cta-color);
+.grid-3-rows .header {
+	position: sticky;
+	top: 0;
+	left: 0;
 }
 
-.brand-card {
-	width: max-content;
+.home-heading {
+	border-bottom: 0.2rem solid var(--cta-color);
 }
 
 .featured-brand-image {
@@ -24,12 +25,12 @@
 	border-radius: 1rem;
 }
 .background-image {
-	background-image: url("../assets/media/images/background1.jpg");
+	background-image: url("https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/background.jpg");
 	background-size: cover;
 	height: 50rem;
 	width: 100%;
 	border-radius: 1rem;
-	opacity: 0.6;
+	opacity: 0.4;
 	position: relative;
 }
 
@@ -37,7 +38,12 @@
 	position: absolute;
 	top: 30rem;
 	font-weight: bolder;
-	font-size: 2.2rem;
 	color: var(--secondary-color-dark);
 	z-index: 1;
+}
+
+.home-btn {
+	border: var(--b-2) solid var(--tertiary-color);
+	background-color: var(--tertiary-color-dark);
+	color: var(--cta-color);
 }

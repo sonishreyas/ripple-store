@@ -1,58 +1,18 @@
 .stacked-list .basic-card {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-	padding: 1rem;
+	padding: var(--p-5);
 }
 
 .stacked-list li {
-	margin: 2rem;
+	margin: var(--m-10);
 }
 .notification-image {
 	height: 5rem;
 	width: 4rem;
 	background: var(--primary-color);
-	padding: 1rem;
-	border-radius: 1rem;
-}
-
-.spaced-list {
-	display: flex;
-	align-items: center;
+	padding: var(--p-5);
+	border-radius: var(--br-2);
 }
 
 .spaced-list li {
-	margin: 1rem;
-}
-
-.dropdown li {
-	width: 1rem !important;
-	position: absolute;
-}
-
-.dropdown-list {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	align-items: center;
-	width: 100%;
-	height: auto;
-	position: relative;
-	bottom: -5rem;
-	left: -6rem;
-	z-index: var(--max-z-index);
-	display: none;
-}
-
-.dropdown-list > li {
-	width: 100%;
-	padding: 0;
-	margin: 0;
-}
-.dropdown:hover .dropdown-list {
-	display: flex;
-}
-
-.dropdown:hover {
-	display: flex !important;
+	margin: var(--m-5);
 }
