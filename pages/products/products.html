@@ -6,37 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Shreyas c. Soni">
-    <!-- <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" /> -->
-    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" />
     <title>Products - Ripple Store</title>
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png"
+        type="image/x-icon">
 </head>
 
 <body>
     <div class="grid-3-rows">
 
         <!-- || Header -->
-        <header class="header">
-            <div class="brand-info">
+        <header
+            class="header header-shadow flex-row justify-content-space-between align-centerflex-row justify-content-space-between align-center">
+            <div class="brand-info flex-row justify-content-center align-center flex-gap-1">
                 <section>
                     <i class="fas fa-bars header-nav-icon"></i>
                 </section>
                 <a href="https://ripple-ui.netlify.app/" class="no-link">
-                    <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
+                    <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png"
                         alt="Logo of ripple UI" class="brand-logo" />
                     <sub class="brand-name">Ripple Store</sub>
                 </a>
-                <ul class="no-list spaced-list header-nav">
+                <ul class="no-list spaced-list header-nav flex-row align-center">
                     <li><a href="https://ripple-store.netlify.app/" class="no-link">Home</a></li>
                     <li><a href="https://ripple-store.netlify.app/pages/products/products.html"
                             class="no-link header-link-active">Products</a></li>
                 </ul>
             </div>
-            <div class="social-icon-container">
-                <ul class="no-list spaced-list">
+            <div class="social-icon-container flex-row align-center flex-gap-2">
+                <ul class="no-list spaced-list flex-row align-center flex-gap-half">
                     <li>
-                        <form class="input-form">
-                            <section class="input-container input-with-icon">
-                                <input id="search" class="textbox-content" type="text" name="search"
+                        <form class="input-form flex-column flex-gap-1 flex-grow-1 flex-wrap h-auto w-100">
+                            <section class="input-container input-with-icon flex-column b-radius-2 m-5">
+                                <input id="search" class="textbox-content p-5" type="text" name="search"
                                     placeholder="Search..." aria-label="Search Products here" />
                                 <i class="fas fa-search search-icon"></i>
                             </section>
@@ -56,12 +59,11 @@
                             class="no-link"><i class="fas fa-shopping-cart social"></i></a>
                     </li>
                     <li>
-                        <a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
-                            target="_blank" aria-label="Login/Register" class="no-link">
-                            <i class="fa-solid fa-right-to-bracket social" aria-label="Login/Register icon"></i></a>
-                    </li>
-                    <li>
                         <i class="fas fa-sun theme-icon social" aria-label="dark/light theme icon"></i>
+                    </li>
+                    <li><a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
+                            target="_blank" aria-label="Login/Register"
+                            class="no-link-decoration primary-btn p-3 b-radius-2 my-0 text-bold social">Login </a>
                     </li>
                 </ul>
             </div>
@@ -70,361 +72,391 @@
         <!-- || Main -->
         <main class="main grid-30-70-column">
             <article class="grid-col-30">
-                <div class="form-container">
-                    <section class="form-header">
-                        <h3 class="form-heading">Filters</h3>
+                <div class="form-container flex-colmn flex-gap-2 p-5 m-5">
+                    <section class="form-header flex-row align-center justify-content-space-between pb-10">
+                        <h3 class="form-heading text-bold py-5 px-0">Filters</h3>
                         <a href="#" class="link-btn">Clear All</a>
                     </section>
-                    <ul class="radio-btn-container">
-                        <li class="no-list form-heading">Sort by</li class="no-list">
+                    <ul class="radio-btn-container pb-10">
+                        <li class="no-list form-heading text-bold py-5 px-0">Sort by</li>
                         <li class="no-list">
                             <input class="radio-btn" type="radio" id="radio-btn" name="radio-btn"
-                                value="Price Low to High" /> Price:
+                                value="Price Low to High" aria-label="Sort by price: low to high" /> Price:
                             Low to High
-                        </li class="no-list">
+                        </li>
                         <li class="no-list">
-                            <input class="radio-btn" type="radio" id="radio-btn" name="radio-btn"
-                                value="Price Low to High" /> Price:
+                            <input class="radio-btn" type="radio" id="radio-btn" name="radio-btn" value="High to Low"
+                                aria-label="Sort by price: high to low" /> Price:
                             High to Low
-                        </li class="no-list">
+                        </li>
                         <li class="no-list">
                             <input class="radio-btn" type="radio" name="radio-btn" id="radio-btn"
-                                value="Customer Rating" /> Customer
+                                value="Customer Rating" aria-label="Sort by customer rating" /> Customer
                             Rating
-                        </li class="no-list">
+                        </li>
                         <li class="no-list">
                             <input class="radio-btn" type="radio" name="radio-btn" id="radio-btn"
-                                value="Better Discount" /> Better
+                                value="Better Discount" aria-label="Sort by better discount" /> Better
                             Discount
-                        </li class="no-list">
+                        </li>
                     </ul>
-                    <ul class="checkbox-btn-container">
-                        <li class="no-list form-heading">Categories</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Casual Shoes" />
-                            Casual Shoes</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sports Shoes" />
-                            Sports Shoes</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Formal Shoes" />
-                            Formal Shoes</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sneakers" /> Sneakers
-                        </li class="no-list">
+                    <ul class="checkbox-btn-container pb-10">
+                        <li class="no-list form-heading text-bold py-5 px-0">Categories</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Casual Shoes"
+                                aria-label="Filter to casual shoes" /> Casual Shoes</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sports Shoes"
+                                aria-label="Filter to sports shoes" /> Sports Shoes</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Formal Shoes"
+                                aria-label="Filter to formal shoes" /> Formal Shoes</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sneakers"
+                                aria-label="Filter to sneakers" /> Sneakers</li>
                         <li class="no-list">
-                            <input class="checkbox-btn" type="checkbox" value="Sandles & Floaters" />
+                            <input class="checkbox-btn" type="checkbox" value="Sandles & Floaters"
+                                aria-label="Filter to sandles and floaters" />
                             Sandles & Floaters
-                        </li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Socks" /> Socks</li
-                            class="no-list">
+                        </li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Socks"
+                                aria-label="Filter to sockes" />
+                            Socks</li>
                     </ul>
 
-                    <ul class="checkbox-btn-container">
-                        <li class="no-list form-heading">Brand</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Adidas" /> Adidas</li
-                            class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Puma" /> Puma</li
-                            class="no-list">
+                    <ul class="checkbox-btn-container pb-10">
+                        <li class="no-list form-heading text-bold py-5 px-0">Brand</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Adidas"
+                                aria-label="Filter to Adidas products" /> Adidas</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Puma"
+                                aria-label="Filter to Puma products" /> Puma</li>
                         <li class="no-list">
-                            <input class="checkbox-btn" type="checkbox" value="U.S. Polo Assn." /> U.S. Polo Assn.
-                        </li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Woodland" /> Woodland
-                        </li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Bata" /> Bata</li
-                            class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Roadster" /> Roadster
-                        </li class="no-list">
+                            <input class="checkbox-btn" type="checkbox" value="U.S. Polo Assn."
+                                aria-label="Filter to U.S. Polo Assn. products" /> U.S. Polo Assn.
+                        </li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Woodland"
+                                aria-label="Filter to Woodland products" /> Woodland</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Bata"
+                                aria-label="Filter to Bata products" /> Bata</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Roadster"
+                                aria-label="Filter to Roadster products" /> Roadster
+                        </li>
                     </ul>
 
-                    <ul class="checkbox-btn-container">
-                        <li class="no-list form-heading">Price</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Under ₹1000" /> Under
-                            ₹1000</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹1000 to ₹2000" />
-                            ₹1000 to ₹2000</li class="no-list">
+                    <ul class="checkbox-btn-container pb-10">
+                        <li class="no-list form-heading text-bold py-5 px-0">Price</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Under ₹1000"
+                                aria-label="Filter by price: under ₹1000" /> Under ₹1000</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹1000 to ₹2000"
+                                aria-label="Filter by price: ₹1000 to ₹2000" /> ₹1000 to ₹2000</li>
                         <li class="no-list">
-                            <input class="checkbox-btn" type="checkbox" value="₹2000 to ₹3000" />
+                            <input class="checkbox-btn" type="checkbox" value="₹2000 to ₹3000"
+                                aria-label="Filter by price: ₹2000 to ₹3000" />
                             ₹2000 to ₹3000
-                        </li class="no-list">
+                        </li>
                         <li class="no-list">
-                            <input class="checkbox-btn" type="checkbox" value="₹3000 to ₹4000" />
+                            <input class="checkbox-btn" type="checkbox" value="₹3000 to ₹4000"
+                                aria-label="Filter by price: ₹3000 to ₹4000" />
                             ₹3000 to ₹4000
-                        </li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹4000 to ₹5000" />
-                            ₹4000 to ₹5000</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹5000+" /> ₹5000+</li
-                            class="no-list">
+                        </li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹4000 to ₹5000"
+                                aria-label="Filter by price: ₹4000 to ₹5000" /> ₹4000 to ₹5000</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹5000+"
+                                aria-label="Filter by price: more than ₹5000" /> ₹5000+</li>
                     </ul>
 
-                    <ul class="checkbox-btn-container">
-                        <li class="no-list form-heading">Rating</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="4 and above" /> 4 and
-                            above</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="3 and above" /> 3 and
-                            above</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="2 and above" /> 2 and
-                            above</li class="no-list">
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="1 and above" /> 1 and
-                            above</li class="no-list">
+                    <ul class="checkbox-btn-container pb-10">
+                        <li class="no-list form-heading text-bold py-5 px-0">Rating</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="4 and above"
+                                aria-label="Filter by rating: 4 and above" /> 4 and above</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="3 and above"
+                                aria-label="Filter by rating: 3 and above" /> 3 and above</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="2 and above"
+                                aria-label="Filter by rating: 2 and above" /> 2 and above</li>
+                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="1 and above"
+                                aria-label="Filter by rating: 1 and above" /> 1 and above</li>
                     </ul>
                 </div>
             </article>
             <article class="grid-col-70 ">
                 <div class="flex-container">
-                    <article class="card vertical card-shadow">
-                        <section class="card-image-container flex-jc-ac">
+                    <article class="card vertical card-shadow p-5 b-radius-2">
+                        <section
+                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
                             <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image" />
+                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
                         </section>
-                        <button class="card-btn card-wishlist">
+                        <button
+                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
                             <span class="wishlist-icon"><i class="far fa-heart"></i></span>
                             <p class="wishlist-text">Add to wishlist</p>
                         </button>
-                        <section class="card-content">
-                            <h1 class="card-title">Puma White Sneakers</h1>
+                        <section class="card-content p-5 pb-0">
+                            <h3 class="card-title">Puma White Sneakers</h3>
                             <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag">
-                                <p>Rs. 2999</p>
-                                <strike>5999</strike>
-                                <p class="discount">(50%)</p>
+                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                <p class="p-0 m-0">Rs. 2999</p>
+                                <strike class="p-0 m-0">5999</strike>
+                                <p class="discount p-0 m-0">(50%)</p>
                             </span>
                         </section>
-                        <section class="card-tag">
-                            <span class="card-review">
+                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
                                 <p>4</p>
                                 <span class="review-star">
                                     <i class="fas fa-star"></i>
                                 </span>
                             </span>
                         </section>
-                        <button class="card-btn card-cart">
+                        <button
+                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
                             <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
                             <p class="cart-text">Add to Cart</p>
                         </button>
                     </article>
-                    <article class="card vertical card-shadow">
-                        <section class="card-image-container flex-jc-ac">
+                    <article class="card vertical card-shadow p-5 b-radius-2">
+                        <section
+                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
                             <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image" />
+                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
                         </section>
-                        <button class="card-btn card-wishlist">
+                        <button
+                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
                             <span class="wishlist-icon"><i class="far fa-heart"></i></span>
                             <p class="wishlist-text">Add to wishlist</p>
                         </button>
-                        <section class="card-content">
-                            <h1 class="card-title">Puma White Sneakers</h1>
+                        <section class="card-content p-5 pb-0">
+                            <h3 class="card-title">Puma White Sneakers</h3>
                             <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag">
-                                <p>Rs. 2999</p>
-                                <strike>5999</strike>
-                                <p class="discount">(50%)</p>
+                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                <p class="p-0 m-0">Rs. 2999</p>
+                                <strike class="p-0 m-0">5999</strike>
+                                <p class="discount p-0 m-0">(50%)</p>
                             </span>
                         </section>
-                        <section class="card-tag">
-                            <span class="card-review">
+                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
                                 <p>4</p>
                                 <span class="review-star">
                                     <i class="fas fa-star"></i>
                                 </span>
                             </span>
                         </section>
-                        <button class="card-btn card-cart">
+                        <button
+                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
                             <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
                             <p class="cart-text">Add to Cart</p>
                         </button>
                     </article>
-                    <article class="card vertical card-shadow">
-                        <section class="card-image-container flex-jc-ac">
+                    <article class="card vertical card-shadow p-5 b-radius-2">
+                        <section
+                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
                             <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image" />
+                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
                         </section>
-                        <button class="card-btn card-wishlist">
+                        <button
+                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
                             <span class="wishlist-icon"><i class="far fa-heart"></i></span>
                             <p class="wishlist-text">Add to wishlist</p>
                         </button>
-                        <section class="card-content">
-                            <h1 class="card-title">Puma White Sneakers</h1>
+                        <section class="card-content p-5 pb-0">
+                            <h3 class="card-title">Puma White Sneakers</h3>
                             <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag">
-                                <p>Rs. 2999</p>
-                                <strike>5999</strike>
-                                <p class="discount">(50%)</p>
+                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                <p class="p-0 m-0">Rs. 2999</p>
+                                <strike class="p-0 m-0">5999</strike>
+                                <p class="discount p-0 m-0">(50%)</p>
                             </span>
                         </section>
-                        <section class="card-tag">
-                            <span class="card-review">
+                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
                                 <p>4</p>
                                 <span class="review-star">
                                     <i class="fas fa-star"></i>
                                 </span>
                             </span>
                         </section>
-                        <button class="card-btn card-cart">
+                        <button
+                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
                             <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
                             <p class="cart-text">Add to Cart</p>
                         </button>
                     </article>
-                    <article class="card vertical card-shadow">
-                        <section class="card-image-container flex-jc-ac">
+                    <article class="card vertical card-shadow p-5 b-radius-2">
+                        <section
+                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
                             <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image" />
+                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
                         </section>
-                        <button class="card-btn card-wishlist">
+                        <button
+                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
                             <span class="wishlist-icon"><i class="far fa-heart"></i></span>
                             <p class="wishlist-text">Add to wishlist</p>
                         </button>
-                        <section class="card-content">
-                            <h1 class="card-title">Puma White Sneakers</h1>
+                        <section class="card-content p-5 pb-0">
+                            <h3 class="card-title">Puma White Sneakers</h3>
                             <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag">
-                                <p>Rs. 2999</p>
-                                <strike>5999</strike>
-                                <p class="discount">(50%)</p>
+                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                <p class="p-0 m-0">Rs. 2999</p>
+                                <strike class="p-0 m-0">5999</strike>
+                                <p class="discount p-0 m-0">(50%)</p>
                             </span>
                         </section>
-                        <section class="card-tag">
-                            <span class="card-review">
+                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
                                 <p>4</p>
                                 <span class="review-star">
                                     <i class="fas fa-star"></i>
                                 </span>
                             </span>
                         </section>
-                        <button class="card-btn card-cart">
+                        <button
+                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
                             <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
                             <p class="cart-text">Add to Cart</p>
                         </button>
                     </article>
-                    <article class="card vertical card-shadow">
-                        <section class="card-image-container flex-jc-ac">
+                    <article class="card vertical card-shadow p-5 b-radius-2">
+                        <section
+                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
                             <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image" />
+                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
                         </section>
-                        <button class="card-btn card-wishlist">
+                        <button
+                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
                             <span class="wishlist-icon"><i class="far fa-heart"></i></span>
                             <p class="wishlist-text">Add to wishlist</p>
                         </button>
-                        <section class="card-content">
-                            <h1 class="card-title">Puma White Sneakers</h1>
+                        <section class="card-content p-5 pb-0">
+                            <h3 class="card-title">Puma White Sneakers</h3>
                             <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag">
-                                <p>Rs. 2999</p>
-                                <strike>5999</strike>
-                                <p class="discount">(50%)</p>
+                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                <p class="p-0 m-0">Rs. 2999</p>
+                                <strike class="p-0 m-0">5999</strike>
+                                <p class="discount p-0 m-0">(50%)</p>
                             </span>
                         </section>
-                        <section class="card-tag">
-                            <span class="card-review">
+                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
                                 <p>4</p>
                                 <span class="review-star">
                                     <i class="fas fa-star"></i>
                                 </span>
                             </span>
                         </section>
-                        <button class="card-btn card-cart">
+                        <button
+                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
                             <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
                             <p class="cart-text">Add to Cart</p>
                         </button>
                     </article>
-                    <article class="card vertical card-shadow">
-                        <section class="card-image-container flex-jc-ac">
+                    <article class="card vertical card-shadow p-5 b-radius-2">
+                        <section
+                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
                             <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image" />
+                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
                         </section>
-                        <button class="card-btn card-wishlist">
+                        <button
+                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
                             <span class="wishlist-icon"><i class="far fa-heart"></i></span>
                             <p class="wishlist-text">Add to wishlist</p>
                         </button>
-                        <section class="card-content">
-                            <h1 class="card-title">Puma White Sneakers</h1>
+                        <section class="card-content p-5 pb-0">
+                            <h3 class="card-title">Puma White Sneakers</h3>
                             <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag">
-                                <p>Rs. 2999</p>
-                                <strike>5999</strike>
-                                <p class="discount">(50%)</p>
+                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                <p class="p-0 m-0">Rs. 2999</p>
+                                <strike class="p-0 m-0">5999</strike>
+                                <p class="discount p-0 m-0">(50%)</p>
                             </span>
                         </section>
-                        <section class="card-tag">
-                            <span class="card-review">
+                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
                                 <p>4</p>
                                 <span class="review-star">
                                     <i class="fas fa-star"></i>
                                 </span>
                             </span>
                         </section>
-                        <button class="card-btn card-cart">
+                        <button
+                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
                             <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
                             <p class="cart-text">Add to Cart</p>
                         </button>
                     </article>
-                    <article class="card vertical card-shadow">
-                        <section class="card-image-container flex-jc-ac">
+                    <article class="card vertical card-shadow p-5 b-radius-2">
+                        <section
+                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
                             <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image" />
+                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
                         </section>
-                        <button class="card-btn card-wishlist">
+                        <button
+                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
                             <span class="wishlist-icon"><i class="far fa-heart"></i></span>
                             <p class="wishlist-text">Add to wishlist</p>
                         </button>
-                        <section class="card-content">
-                            <h1 class="card-title">Puma White Sneakers</h1>
+                        <section class="card-content p-5 pb-0">
+                            <h3 class="card-title">Puma White Sneakers</h3>
                             <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag">
-                                <p>Rs. 2999</p>
-                                <strike>5999</strike>
-                                <p class="discount">(50%)</p>
+                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                <p class="p-0 m-0">Rs. 2999</p>
+                                <strike class="p-0 m-0">5999</strike>
+                                <p class="discount p-0 m-0">(50%)</p>
                             </span>
                         </section>
-                        <section class="card-tag">
-                            <span class="card-review">
+                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
                                 <p>4</p>
                                 <span class="review-star">
                                     <i class="fas fa-star"></i>
                                 </span>
                             </span>
                         </section>
-                        <button class="card-btn card-cart">
+                        <button
+                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
                             <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
                             <p class="cart-text">Add to Cart</p>
                         </button>
                     </article>
-                    <article class="card vertical card-shadow">
-                        <section class="card-image-container flex-jc-ac">
+                    <article class="card vertical card-shadow p-5 b-radius-2">
+                        <section
+                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
                             <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image" />
+                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
                         </section>
-                        <button class="card-btn card-wishlist">
+                        <button
+                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
                             <span class="wishlist-icon"><i class="far fa-heart"></i></span>
                             <p class="wishlist-text">Add to wishlist</p>
                         </button>
-                        <section class="card-content">
-                            <h1 class="card-title">Puma White Sneakers</h1>
+                        <section class="card-content p-5 pb-0">
+                            <h3 class="card-title">Puma White Sneakers</h3>
                             <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag">
-                                <p>Rs. 2999</p>
-                                <strike>5999</strike>
-                                <p class="discount">(50%)</p>
+                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                <p class="p-0 m-0">Rs. 2999</p>
+                                <strike class="p-0 m-0">5999</strike>
+                                <p class="discount p-0 m-0">(50%)</p>
                             </span>
                         </section>
-                        <section class="card-tag">
-                            <span class="card-review">
+                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
                                 <p>4</p>
                                 <span class="review-star">
                                     <i class="fas fa-star"></i>
                                 </span>
                             </span>
                         </section>
-                        <button class="card-btn card-cart">
+                        <button
+                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
                             <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
                             <p class="cart-text">Add to Cart</p>
                         </button>
                     </article>
                 </div>
-                <div class="pagination">
-                    <button class="page-number">&lt</button>
-                    <button class="page-number">1</button>
-                    <button class="page-number">2</button>
-                    <button class="page-number">3</button>
-                    <button class="page-number">4</button>
-                    <button class="page-number">5</button>
-                    <button class="page-number">&gt</button>
+                <div class="pagination flex-row justify-content-center align-center p-5 mt-10 b-radius-4 flex-gap-1">
+                    <button class="page-number p-5 b-radius-circle">&lt</button>
+                    <button class="page-number p-5 b-radius-circle">1</button>
+                    <button class="page-number p-5 b-radius-circle">2</button>
+                    <button class="page-number p-5 b-radius-circle">3</button>
+                    <button class="page-number p-5 b-radius-circle">4</button>
+                    <button class="page-number p-5 b-radius-circle">5</button>
+                    <button class="page-number p-5 b-radius-circle">&gt</button>
                 </div>
 
             </article>
@@ -448,8 +480,8 @@
         </nav>
 
         <!-- || Footer -->
-        <footer class="footer">
-            <div class="social-icon-container">
+        <footer class="footer footer-shadow flex-column justify-content-center align-center flex-gap-1 flex-wrap">
+            <div class="social-icon-container flex-row align-center flex-gap-2">
                 <a href="https://github.com/sonishreyas" target="_blank" aria-label="View Github Profile"
                     class="no-link"><i class="fab fa-github social"></i></a>
                 <a href="https://twitter.com/ShreyasSoni0204" target="_blank" aria-label="View Twitter Profile"

@@ -15,22 +15,22 @@ const handleCardButtons = (modal) => {
 
 const handleModal = () => {
 	const modal = document.querySelector(
-		".profile-vertical-tabs-container .modal-container"
+		".profile-tabs .modal-container"
 	);
 	const addNewAddressBtn = document.querySelector(
-		".profile-vertical-tabs-container .profile-header .address-btn"
+		".profile-tabs .profile-header .address-btn"
 	);
 	const cancelBtn = document.querySelector(
-		".profile-vertical-tabs-container .modal-container .cancel-btn"
+		".profile-tabs .modal-container .cancel-btn"
 	);
 	const saveBtn = document.querySelector(
-		".profile-vertical-tabs-container .modal-container .save-btn"
+		".profile-tabs .modal-container .save-btn"
 	);
 	const addressForm = document.querySelector(
-		".profile-vertical-tabs-container .input-form"
+		".profile-tabs .input-form"
 	);
 	const addAddressPath = document.querySelector(
-		".profile-vertical-tabs-container .address-container .profile-container ul"
+		".profile-tabs .address-container .profile-container ul"
 	);
 
 	addNewAddressBtn.addEventListener("click", () => {

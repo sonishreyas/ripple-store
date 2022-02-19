@@ -6,37 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Shreyas c. Soni">
-    <!-- <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" /> -->
-    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" />
     <title>Product Details - Ripple Store</title>
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png"
+        type="image/x-icon">
 </head>
 
 <body>
     <div class="grid-3-rows">
 
         <!-- || Header -->
-        <header class="header header-shadow">
-            <div class="brand-info">
+        <header
+            class="header header-shadow flex-row justify-content-space-between align-centerflex-row justify-content-space-between align-center">
+            <div class="brand-info flex-row justify-content-center align-center flex-gap-1">
                 <section>
                     <i class="fas fa-bars header-nav-icon"></i>
                 </section>
-                <a href="https://ripple-store.netlify.app/" class="no-link">
-                    <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
+                <a href="https://ripple-ui.netlify.app/" class="no-link">
+                    <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png"
                         alt="Logo of ripple UI" class="brand-logo" />
                     <sub class="brand-name">Ripple Store</sub>
                 </a>
-                <ul class="no-list spaced-list header-nav">
+                <ul class="no-list spaced-list header-nav flex-row align-center">
                     <li><a href="https://ripple-store.netlify.app/" class="no-link">Home</a></li>
                     <li><a href="https://ripple-store.netlify.app/pages/products/products.html"
                             class="no-link">Products</a></li>
                 </ul>
             </div>
-            <div class="social-icon-container">
-                <ul class="no-list spaced-list">
+            <div class="social-icon-container flex-row align-center flex-gap-2">
+                <ul class="no-list spaced-list flex-row align-center flex-gap-half">
                     <li>
-                        <form class="input-form">
-                            <section class="input-container input-with-icon">
-                                <input id="search" class="textbox-content" type="text" name="search"
+                        <form class="input-form flex-column flex-gap-1 flex-grow-1 flex-wrap h-auto w-100">
+                            <section class="input-container input-with-icon flex-column b-radius-2 m-5">
+                                <input id="search" class="textbox-content p-5" type="text" name="search"
                                     placeholder="Search..." aria-label="Search Products here" />
                                 <i class="fas fa-search search-icon"></i>
                             </section>
@@ -59,24 +62,26 @@
                         <i class="fas fa-sun theme-icon social" aria-label="dark/light theme icon"></i>
                     </li>
                     <li><a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
-                            target="_blank" aria-label="Login/Register" class="no-link primary-btn social">Login </a>
+                            target="_blank" aria-label="Login/Register"
+                            class="no-link-decoration primary-btn p-3 b-radius-2 my-0 text-bold social">Login </a>
                     </li>
                 </ul>
             </div>
         </header>
 
         <!-- || Main -->
-        <main class="main flex-jc-ac">
-            <section class="rui-main--heading-container no-border ">
-                <article class="card horizontal card-shadow">
-                    <div class="horizontal-card-img--container flex-jc-ac">
+        <main class="main flex-column justify-content-center align-center flex-gap-1">
+            <section class="rui-main--heading-container no-border w-100 h-auto">
+                <article class="card horizontal card-shadow p-5 b-radius-2 w-100 h-auto">
+                    <div
+                        class="horizontal-card-img--container flex-row justify-content-center align-center flex-wrap b-radius-2">
                         <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                            alt="Puma Sneakers" class="horizontal-card-img" />
+                            alt="Puma Sneakers" class="horizontal-card-img b-radius-2 mt-5" />
                     </div>
-                    <div class="horizontal-card-text--container">
-                        <h1>Puma White Sneakers</h1>
+                    <div class="horizontal-card-text--container flex-column flex-gap-1 p-5 b-radius-2 my-0 mx-5">
+                        <h2>Puma White Sneakers</h2>
                         <p>PUMA</p>
-                        <span class="rating flex-ac">
+                        <span class="rating flex-row align-center flex-gap-half pb-5">
                             <i class="fas fa-star set"></i>
                             <i class="fas fa-star set"></i>
                             <i class="fas fa-star set"></i>
@@ -84,8 +89,8 @@
                             <i class="fas fa-star unset"></i>
                             <p class="secondary-font">| (400 reviews)</p>
                         </span>
-                        <div class="pricing flex-ac">
-                            <h3>Rs. 2999</h3>
+                        <div class="pricing flex-row align-center flex-gap-half text-bold py-5 px-0">
+                            <h4>Rs. 2999</h4>
                             <p class="secondary-font">
                                 <strike>Rs. 5999</strike>
                             </p>
@@ -93,67 +98,69 @@
                         </div>
                         <p>Select Size (UK Size)</p>
                         <div class="sizes-container">
-                            <button class="size">6</button>
-                            <button class="size">7</button>
-                            <button class="size">8</button>
-                            <button class="size">9</button>
-                            <button class="size">10</button>
-                            <button class="size">11</button>
+                            <button class="size p-5 b-radius-circle">6</button>
+                            <button class="size p-5 b-radius-circle">7</button>
+                            <button class="size p-5 b-radius-circle">8</button>
+                            <button class="size p-5 b-radius-circle">9</button>
+                            <button class="size p-5 b-radius-circle">10</button>
+                            <button class="size p-5 b-radius-circle">11</button>
                         </div>
-                        <div class="horizontal-card-btn-container flex-ac">
-                            <button class="card-btn card-cart horizontal-card-btn-primary">
+                        <div class="flex-row align-center flex-gap-1 flex-wrap m-5 horizontal-card-btn-container mb-5">
+                            <button
+                                class="p-5 my-5 mb-10 horizontal-card-btn-primary primary-btn b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1 flex-grow-1">
                                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
                                 <p class="cart-text">Add to Cart</p>
                             </button>
-                            <button class="card-btn horizontal-card-btn-secondary">
+                            <button
+                                class="p-5 my-5 mb-10 outline-btn b-radius-2 text-bold horizontal-card-btn-secondary flex-row justify-content-center align-center flex-gap-1 flex-grow-1 text-bold">
                                 <span class="wishlist-icon"><i class="far fa-heart"></i></span>
                                 <p class="wishlist-text">Add to wishlist</p>
                             </button>
                         </div>
                         <div class="horizontal-card-details-container">
                             <h3>Specifications</h3>
-                            <div class="specification-column flex-ac">
-                                <form class="specifications-form">
-                                    <section class="specification">
+                            <div class="specification-column flex-row align-center flex-wrap">
+                                <form class="specifications-form flex-column flex-grow-1 flex-wrap">
+                                    <section class="specification flex-column m-5">
                                         <label for="type" class="specification-key">Type</label>
-                                        <input type="text" value="Sneakers" class="specification-value" readonly
+                                        <input type="text" value="Sneakers" class="specification-value p-2" readonly
                                             aria-label="Shoes Type" />
                                     </section>
-                                    <section class="specification">
+                                    <section class="specification flex-column m-5">
                                         <label for="type" class="specification-key">Pattern</label>
-                                        <input type="text" value="Solid" class="specification-value" readonly
+                                        <input type="text" value="Solid" class="specification-value p-2" readonly
                                             aria-label="Shoes pattern" />
                                     </section>
-                                    <section class="specification">
+                                    <section class="specification flex-column m-5">
                                         <label for="type" class="specification-key">Shoe Width</label>
-                                        <input type="text" value="Regular" class="specification-value" readonly
+                                        <input type="text" value="Regular" class="specification-value p-2" readonly
                                             aria-label="Shoe Width" />
                                     </section>
-                                    <section class="specification">
+                                    <section class="specification flex-column m-5">
                                         <label for="type" class="specification-key">Insole</label>
-                                        <input type="text" value="Comfort Insole" class="specification-value" readonly
-                                            aria-label="Shoe Insole Material" />
+                                        <input type="text" value="Comfort Insole" class="specification-value p-2"
+                                            readonly aria-label="Shoe Insole Material" />
                                     </section>
                                 </form>
-                                <form action="" class="specifications-form">
-                                    <section class="specification">
+                                <form action="" class="specifications-form flex-column flex-grow-1 flex-wrap">
+                                    <section class="specification flex-column m-5">
                                         <label for="type" class="specification-key">Sole Material</label>
-                                        <input type="text" value="Rubber" class="specification-value" readonly
+                                        <input type="text" value="Rubber" class="specification-value p-2" readonly
                                             aria-label="Shoe Sole Material" />
                                     </section>
-                                    <section class="specification">
+                                    <section class="specification flex-column m-5">
                                         <label for="type" class="specification-key">Warranty</label>
-                                        <input type="text" value="3 months" class="specification-value" readonly
+                                        <input type="text" value="3 months" class="specification-value p-2" readonly
                                             aria-label="Shoes Warranty" />
                                     </section>
-                                    <section class="specification">
+                                    <section class="specification flex-column m-5">
                                         <label for="type" class="specification-key">Toe Shape</label>
-                                        <input type="text" value="Round Toe" class="specification-value" readonly
+                                        <input type="text" value="Round Toe" class="specification-value p-2" readonly
                                             aria-label="Toe Shape" />
                                     </section>
-                                    <section class="specification">
+                                    <section class="specification flex-column m-5">
                                         <label for="type" class="specification-key">Occasion</label>
-                                        <input type="text" value="Everyday" class="specification-value" readonly
+                                        <input type="text" value="Everyday" class="specification-value p-2" readonly
                                             aria-label="Occasions" />
                                     </section>
                                 </form>
@@ -181,8 +188,8 @@
         </nav>
 
         <!-- || Footer -->
-        <footer class="footer footer-shadow">
-            <div class="social-icon-container">
+        <footer class="footer footer-shadow flex-column justify-content-center align-center flex-gap-1 flex-wrap">
+            <div class="social-icon-container flex-row align-center flex-gap-2">
                 <a href="https://github.com/sonishreyas" target="_blank" aria-label="View Github Profile"
                     class="no-link"><i class="fab fa-github social"></i></a>
                 <a href="https://twitter.com/ShreyasSoni0204" target="_blank" aria-label="View Twitter Profile"

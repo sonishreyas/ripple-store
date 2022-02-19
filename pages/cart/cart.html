@@ -6,33 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Shreyas c. Soni">
-    <!-- <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" /> -->
-    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" />
     <title>Cart - Ripple Fashion</title>
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png"
+        type="image/x-icon">
 </head>
 
 <body>
     <div class="grid-3-rows">
 
         <!-- || Header -->
-        <header class="header">
-            <div class="brand-info">
+        <header
+            class="header header-shadow flex-row justify-content-space-between align-centerflex-row justify-content-space-between align-center">
+            <div class="brand-info flex-row justify-content-center align-center flex-gap-1">
                 <section>
                     <i class="fas fa-bars header-nav-icon"></i>
                 </section>
                 <a href="https://ripple-ui.netlify.app/" class="no-link">
-                    <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
+                    <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png"
                         alt="Logo of ripple UI" class="brand-logo" />
                     <sub class="brand-name">Ripple Store</sub>
                 </a>
-                <ul class="no-list spaced-list header-nav">
+                <ul class="no-list spaced-list header-nav flex-row align-center">
                     <li><a href="https://ripple-store.netlify.app/" class="no-link">Home</a></li>
                     <li><a href="https://ripple-store.netlify.app/pages/products/products.html"
                             class="no-link">Products</a></li>
                 </ul>
             </div>
-            <div class="social-icon-container">
-                <ul class="no-list spaced-list">
+            <div class="social-icon-container flex-row align-center flex-gap-2">
+                <ul class="no-list spaced-list flex-row align-center flex-gap-half">
                     <li>
                         <form class="input-form">
                             <section class="input-container input-with-icon">
@@ -56,12 +59,11 @@
                             class="no-link"><i class="fas fa-shopping-cart social"></i></a>
                     </li>
                     <li>
-                        <a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
-                            target="_blank" aria-label="Login/Register" class="no-link">
-                            <i class="fa-solid fa-right-to-bracket social" aria-label="Login/Register icon"></i></a>
-                    </li>
-                    <li>
                         <i class="fas fa-sun theme-icon social" aria-label="dark/light theme icon"></i>
+                    </li>
+                    <li><a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
+                            target="_blank" aria-label="Login/Register"
+                            class="no-link-decoration primary-btn p-3 b-radius-2 my-0 text-bold social">Login </a>
                     </li>
                 </ul>
             </div>
@@ -190,8 +192,8 @@
         </nav>
 
         <!-- || Footer -->
-        <footer class="footer">
-            <div class="social-icon-container">
+        <footer class="footer footer-shadow flex-column justify-content-center align-center flex-gap-1 flex-wrap">
+            <div class="social-icon-container flex-row align-center flex-gap-2">
                 <a href="https://github.com/sonishreyas" target="_blank" aria-label="View Github Profile"
                     class="no-link"><i class="fab fa-github social"></i></a>
                 <a href="https://twitter.com/ShreyasSoni0204" target="_blank" aria-label="View Twitter Profile"

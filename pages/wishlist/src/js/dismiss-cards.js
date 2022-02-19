@@ -1,10 +1,12 @@
 const handleDismissCard = () => {
-	const dismissCardBtn = document.querySelector(
+	const dismissCardBtn = document.querySelectorAll(
 		".dismiss-cards .card-dismiss-btn"
 	);
-	const card = document.querySelector(".dismiss-cards .card");
-	dismissCardBtn.addEventListener("click", () => {
-		card.classList.add("inactive");
+	const card = document.querySelectorAll(".dismiss-cards .card");
+	dismissCardBtn.forEach((item, index) => {
+		item.addEventListener("click", () => {
+			card[index].classList.add("inactive");
+		});
 	});
 };
 
