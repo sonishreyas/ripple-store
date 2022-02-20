@@ -5,14 +5,16 @@ const handleNavBar = () => {
 	);
 	const brandName = document.querySelector(".header .brand-info");
 	const navBar = document.querySelector(".nav");
-	const drawerHeader = document.querySelector(".nav .rui-drawer-header");
+	const drawerContent = document.querySelector(
+		".nav .rui-drawer-content--list"
+	);
 	hamburgerIcon.addEventListener("click", () => {
-		drawerHeader.style.visibility = "visible";
+		drawerContent.style.visibility = "visible";
 		navBar.style.visibility = "visible";
 		brandName.style.visibility = "hidden";
 	});
 	closeIcon.addEventListener("click", () => {
-		drawerHeader.style.visibility = "hidden";
+		drawerContent.style.visibility = "hidden";
 		navBar.style.visibility = "hidden";
 		brandName.style.visibility = "visible";
 	});
@@ -20,22 +22,22 @@ const handleNavBar = () => {
 		if (window.innerWidth >= 1180) {
 			navBar.style.visibility = "visible";
 			brandName.style.visibility = "visible";
-			if (drawerHeader.classList.contains("display-inactive") === false) {
-				drawerHeader.classList.add("display-inactive");
+			if (drawerContent.classList.contains("display-inactive") === false) {
+				drawerContent.classList.add("display-inactive");
 			}
 		} else {
-			if (drawerHeader.classList.contains("display-inactive")) {
-				drawerHeader.classList.remove("display-inactive");
+			if (drawerContent.classList.contains("display-inactive")) {
+				drawerContent.classList.remove("display-inactive");
 			}
 			navBar.style.visibility = "hidden";
-			drawerHeader.style.visibility = "hidden";
+			drawerContent.style.visibility = "hidden";
 			brandName.style.visibility = "visible";
 		}
 	});
 
 	if (window.innerWidth < 1180) {
-		if (drawerHeader.classList.contains("display-inactive")) {
-			drawerHeader.classList.remove("display-inactive");
+		if (drawerContent.classList.contains("display-inactive")) {
+			drawerContent.classList.remove("display-inactive");
 		}
 	}
 };
