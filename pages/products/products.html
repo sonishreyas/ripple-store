@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Shreyas c. Soni">
-    <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" />
+    <link rel="stylesheet" href="http://127.0.0.1:5501/css/components.css" />
     <title>Products - Ripple Store</title>
     <link rel="icon"
         href="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png"
@@ -63,7 +63,8 @@
                     </li>
                     <li><a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
                             target="_blank" aria-label="Login/Register"
-                            class="no-link-decoration primary-btn p-3 b-radius-2 my-0 text-bold social">Login </a>
+                            class="no-link-decoration primary-btn p-3 b-radius-2 my-0 text-bold text-tertiary-color">Login
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -71,106 +72,188 @@
 
         <!-- || Main -->
         <main class="main grid-30-70-column">
-            <article class="grid-col-30">
-                <div class="form-container flex-colmn flex-gap-2 p-5 m-5">
-                    <section class="form-header flex-row align-center justify-content-space-between pb-10">
+            <article class="grid-col-30 mr-10 w-100 h-auto">
+                <div class="form-container flex-colmn flex-gap-2 p-5 m-5 w-100 h-auto">
+                    <section class="form-header flex-row align-center justify-content-space-between pb-10 w-100 h-auto">
                         <h3 class="form-heading text-bold py-5 px-0">Filters</h3>
                         <a href="#" class="link-btn">Clear All</a>
                     </section>
-                    <ul class="radio-btn-container pb-10">
+                    <ul class="radio-btn-container pb-10 outline-container p-5 b-radius-2 my-10">
                         <li class="no-list form-heading text-bold py-5 px-0">Sort by</li>
-                        <li class="no-list">
-                            <input class="radio-btn" type="radio" id="radio-btn" name="radio-btn"
-                                value="Price Low to High" aria-label="Sort by price: low to high" /> Price:
-                            Low to High
-                        </li>
-                        <li class="no-list">
-                            <input class="radio-btn" type="radio" id="radio-btn" name="radio-btn" value="High to Low"
-                                aria-label="Sort by price: high to low" /> Price:
-                            High to Low
-                        </li>
-                        <li class="no-list">
-                            <input class="radio-btn" type="radio" name="radio-btn" id="radio-btn"
-                                value="Customer Rating" aria-label="Sort by customer rating" /> Customer
-                            Rating
-                        </li>
-                        <li class="no-list">
-                            <input class="radio-btn" type="radio" name="radio-btn" id="radio-btn"
-                                value="Better Discount" aria-label="Sort by better discount" /> Better
-                            Discount
-                        </li>
-                    </ul>
-                    <ul class="checkbox-btn-container pb-10">
-                        <li class="no-list form-heading text-bold py-5 px-0">Categories</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Casual Shoes"
-                                aria-label="Filter to casual shoes" /> Casual Shoes</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sports Shoes"
-                                aria-label="Filter to sports shoes" /> Sports Shoes</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Formal Shoes"
-                                aria-label="Filter to formal shoes" /> Formal Shoes</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sneakers"
-                                aria-label="Filter to sneakers" /> Sneakers</li>
-                        <li class="no-list">
-                            <input class="checkbox-btn" type="checkbox" value="Sandles & Floaters"
-                                aria-label="Filter to sandles and floaters" />
-                            Sandles & Floaters
-                        </li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Socks"
-                                aria-label="Filter to sockes" />
-                            Socks</li>
-                    </ul>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Price: Low to high</p>
 
-                    <ul class="checkbox-btn-container pb-10">
-                        <li class="no-list form-heading text-bold py-5 px-0">Brand</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Adidas"
-                                aria-label="Filter to Adidas products" /> Adidas</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Puma"
-                                aria-label="Filter to Puma products" /> Puma</li>
-                        <li class="no-list">
-                            <input class="checkbox-btn" type="checkbox" value="U.S. Polo Assn."
-                                aria-label="Filter to U.S. Polo Assn. products" /> U.S. Polo Assn.
+                            </section>
                         </li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Woodland"
-                                aria-label="Filter to Woodland products" /> Woodland</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Bata"
-                                aria-label="Filter to Bata products" /> Bata</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Roadster"
-                                aria-label="Filter to Roadster products" /> Roadster
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Price: High to Low</p>
+
+                            </section>
+                        </li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Customer
+                                    Rating</p>
+
+                            </section>
+                        </li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip fliter-chip-selected cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Better
+                                    Discount</p>
+
+                            </section>
                         </li>
                     </ul>
-
-                    <ul class="checkbox-btn-container pb-10">
+                    <ul
+                        class="outline-container price-slider p-5 my-5 b-radius-2 flex-column flex-gap-1 flex-wrap w-100  my-10">
                         <li class="no-list form-heading text-bold py-5 px-0">Price</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Under ₹1000"
-                                aria-label="Filter by price: under ₹1000" /> Under ₹1000</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹1000 to ₹2000"
-                                aria-label="Filter by price: ₹1000 to ₹2000" /> ₹1000 to ₹2000</li>
-                        <li class="no-list">
-                            <input class="checkbox-btn" type="checkbox" value="₹2000 to ₹3000"
-                                aria-label="Filter by price: ₹2000 to ₹3000" />
-                            ₹2000 to ₹3000
+                        <article class="value-input flex-row flex-gap-2 align-center mb-10">
+                            <article class="field flex-row align-center">
+                                <span class="h6">Min </span>
+                                <input type="number" value="2000" class="input-min w-100 ml-5 b-radius-1 h4" />
+                            </article>
+                            <span class="h6">-</span>
+                            <article class="field flex-row align-center">
+                                <span class="h6">Max </span>
+                                <input type="number" value="15000" class="input-max w-100 ml-5 b-radius-1 h4" />
+                            </article>
+                        </article>
+
+                        <article class="range-slider-container b-radius-1">
+                            <article class="range-slider-progress b-radius-1"></article>
+                        </article>
+
+                        <article class="range-input">
+                            <input type="range" name="range-min" min="0" max="15000" value="2000" class="range-min"
+                                step="100"> <input type="range" name="range-max" min="0" max="15000" value="15000"
+                                class="range-max" step="100">
+                        </article>
+                    </ul>
+                    <ul class="checkbox-btn-container pb-10 outline-container p-5 b-radius-2 my-10">
+                        <li class="no-list form-heading text-bold py-5 px-0">Categories</li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip fliter-chip-selected cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Casual Shoes</p>
+                            </section>
                         </li>
-                        <li class="no-list">
-                            <input class="checkbox-btn" type="checkbox" value="₹3000 to ₹4000"
-                                aria-label="Filter by price: ₹3000 to ₹4000" />
-                            ₹3000 to ₹4000
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Sports Shoes</p>
+                            </section>
                         </li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹4000 to ₹5000"
-                                aria-label="Filter by price: ₹4000 to ₹5000" /> ₹4000 to ₹5000</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹5000+"
-                                aria-label="Filter by price: more than ₹5000" /> ₹5000+</li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Formal Shoes</p>
+                            </section>
+                        </li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip fliter-chip-selected cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Sneakers</p>
+                            </section>
+                        </li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Sandles & Floaters</p>
+                            </section>
+                        </li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Socks</p>
+                            </section>
+                        </li>
                     </ul>
 
-                    <ul class="checkbox-btn-container pb-10">
+                    <ul class="checkbox-btn-container pb-10 outline-container p-5 b-radius-2 my-10">
+                        <li class="no-list form-heading text-bold py-5 px-0">Brand</li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip fliter-chip-selected cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Adidas</p>
+                            </section>
+                        </li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Puma</p>
+                            </section>
+                        </li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">U.S. Polo Assn.</p>
+                            </section>
+                        </li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Woodland</p>
+                            </section>
+                        </li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Bata</p>
+                            </section>
+                        </li>
+                        <li class="no-list w-100 my-2">
+                            <section
+                                class="basic-chip flex-row align-center flex-wrap flex-gap-1 h6 filter-chip cursor-pointer">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <p class="basic-chip-content">Roadster</p>
+                            </section>
+                        </li>
+                    </ul>
+                    <ul
+                        class="outline-container rating-slider p-5 my-5 b-radius-2 flex-column flex-gap-1 flex-wrap w-100  my-10">
                         <li class="no-list form-heading text-bold py-5 px-0">Rating</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="4 and above"
-                                aria-label="Filter by rating: 4 and above" /> 4 and above</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="3 and above"
-                                aria-label="Filter by rating: 3 and above" /> 3 and above</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="2 and above"
-                                aria-label="Filter by rating: 2 and above" /> 2 and above</li>
-                        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="1 and above"
-                                aria-label="Filter by rating: 1 and above" /> 1 and above</li>
+                        <article class="value-input flex-row flex-gap-2 align-center mb-10">
+                            <article class="field flex-row align-center">
+                                <span class="h6">Min </span>
+                                <input type="number" value="1" class="input-min w-100 ml-5 b-radius-1 h4" />
+                            </article>
+                            <span class="h6">-</span>
+                            <article class="field flex-row align-center">
+                                <span class="h6">Max </span>
+                                <input type="number" value="5" class="input-max w-100 ml-5 b-radius-1 h4" />
+                            </article>
+                        </article>
+
+                        <article class="range-slider-container b-radius-1">
+                            <article class="range-slider-progress b-radius-1"></article>
+                        </article>
+
+                        <article class="range-input">
+                            <input type="range" name="range-min" min="1" max="5" value="1" class="range-min" step="1">
+                            <input type="range" name="range-max" min="1" max="5" value="5" class="range-max" step="1">
+                        </article>
                     </ul>
                 </div>
             </article>
