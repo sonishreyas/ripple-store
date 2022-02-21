@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Shreyas c. Soni">
-    <link rel="stylesheet" href="https://ripple-store.netlify.app/css/components.css" />
+    <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" />
     <title>Products - Ripple Store</title>
     <link rel="icon"
         href="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png"
@@ -70,14 +70,13 @@
                     </ul>
                 </div>
             </div>
-
         </header>
 
 
         <!-- || Main -->
         <main class="main grid-30-70-column">
             <article class="grid-col-30 h-auto">
-                <div class="form-container flex-colmn flex-gap-2 p-5 m-5 w-100 h-auto">
+                <div class="flex-column p-5 m-5 w-100 h-auto">
                     <section
                         class="form-header flex-row align-center justify-content-space-between p-5 pb-10 w-100 h-auto ">
                         <h3 class="form-heading text-bold py-5 px-0">Filters</h3>
@@ -265,279 +264,303 @@
                 </div>
             </article>
             <article class="grid-col-70 ">
-                <div class="flex-container">
-                    <article class="card vertical card-shadow p-5 b-radius-2">
-                        <section
-                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
-                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
-                        </section>
-                        <button
-                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
-                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
-                            <p class="wishlist-text">Add to wishlist</p>
-                        </button>
-                        <section class="card-content p-5 pb-0">
-                            <h3 class="card-title">Puma White Sneakers</h3>
-                            <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
-                                <p class="p-0 m-0">Rs. 2999</p>
-                                <strike class="p-0 m-0">5999</strike>
-                                <p class="discount p-0 m-0">(50%)</p>
-                            </span>
-                        </section>
-                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
-                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
-                                <p>4</p>
-                                <span class="review-star">
-                                    <i class="fas fa-star"></i>
+                <div class="products-container flex-row align-center flex-gap-2 flex-wrap">
+                    <a href="https://ripple-store.netlify.app/pages/product-details/product-details.html"
+                        class="no-link">
+                        <article class="card vertical card-shadow p-5 b-radius-2">
+                            <section
+                                class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
+                                <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                    alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
+                            </section>
+                            <button
+                                class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
+                                <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                <p class="wishlist-text">Add to wishlist</p>
+                            </button>
+                            <section class="card-content p-5 pb-0">
+                                <h3 class="card-title">Puma White Sneakers</h3>
+                                <p class="card-category">Men Sneakers</p>
+                                <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                    <p class="p-0 m-0">Rs. 2999</p>
+                                    <strike class="p-0 m-0">5999</strike>
+                                    <p class="discount p-0 m-0">(50%)</p>
                                 </span>
-                            </span>
-                        </section>
-                        <button
-                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
-                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
-                            <p class="cart-text">Add to Cart</p>
-                        </button>
-                    </article>
-                    <article class="card vertical card-shadow p-5 b-radius-2">
-                        <section
-                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
-                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
-                        </section>
-                        <button
-                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
-                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
-                            <p class="wishlist-text">Add to wishlist</p>
-                        </button>
-                        <section class="card-content p-5 pb-0">
-                            <h3 class="card-title">Puma White Sneakers</h3>
-                            <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
-                                <p class="p-0 m-0">Rs. 2999</p>
-                                <strike class="p-0 m-0">5999</strike>
-                                <p class="discount p-0 m-0">(50%)</p>
-                            </span>
-                        </section>
-                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
-                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
-                                <p>4</p>
-                                <span class="review-star">
-                                    <i class="fas fa-star"></i>
+                            </section>
+                            <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                                <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
+                                    <p>4</p>
+                                    <span class="review-star">
+                                        <i class="fas fa-star"></i>
+                                    </span>
                                 </span>
-                            </span>
-                        </section>
-                        <button
-                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
-                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
-                            <p class="cart-text">Add to Cart</p>
-                        </button>
-                    </article>
-                    <article class="card vertical card-shadow p-5 b-radius-2">
-                        <section
-                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
-                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
-                        </section>
-                        <button
-                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
-                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
-                            <p class="wishlist-text">Add to wishlist</p>
-                        </button>
-                        <section class="card-content p-5 pb-0">
-                            <h3 class="card-title">Puma White Sneakers</h3>
-                            <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
-                                <p class="p-0 m-0">Rs. 2999</p>
-                                <strike class="p-0 m-0">5999</strike>
-                                <p class="discount p-0 m-0">(50%)</p>
-                            </span>
-                        </section>
-                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
-                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
-                                <p>4</p>
-                                <span class="review-star">
-                                    <i class="fas fa-star"></i>
+                            </section>
+                            <button
+                                class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                            </button>
+                        </article>
+                    </a>
+                    <a href="https://ripple-store.netlify.app/pages/product-details/product-details.html"
+                        class="no-link">
+                        <article class="card vertical card-shadow p-5 b-radius-2">
+                            <section
+                                class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
+                                <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                    alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
+                            </section>
+                            <button
+                                class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
+                                <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                <p class="wishlist-text">Add to wishlist</p>
+                            </button>
+                            <section class="card-content p-5 pb-0">
+                                <h3 class="card-title">Puma White Sneakers</h3>
+                                <p class="card-category">Men Sneakers</p>
+                                <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                    <p class="p-0 m-0">Rs. 2999</p>
+                                    <strike class="p-0 m-0">5999</strike>
+                                    <p class="discount p-0 m-0">(50%)</p>
                                 </span>
-                            </span>
-                        </section>
-                        <button
-                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
-                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
-                            <p class="cart-text">Add to Cart</p>
-                        </button>
-                    </article>
-                    <article class="card vertical card-shadow p-5 b-radius-2">
-                        <section
-                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
-                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
-                        </section>
-                        <button
-                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
-                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
-                            <p class="wishlist-text">Add to wishlist</p>
-                        </button>
-                        <section class="card-content p-5 pb-0">
-                            <h3 class="card-title">Puma White Sneakers</h3>
-                            <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
-                                <p class="p-0 m-0">Rs. 2999</p>
-                                <strike class="p-0 m-0">5999</strike>
-                                <p class="discount p-0 m-0">(50%)</p>
-                            </span>
-                        </section>
-                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
-                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
-                                <p>4</p>
-                                <span class="review-star">
-                                    <i class="fas fa-star"></i>
+                            </section>
+                            <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                                <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
+                                    <p>4</p>
+                                    <span class="review-star">
+                                        <i class="fas fa-star"></i>
+                                    </span>
                                 </span>
-                            </span>
-                        </section>
-                        <button
-                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
-                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
-                            <p class="cart-text">Add to Cart</p>
-                        </button>
-                    </article>
-                    <article class="card vertical card-shadow p-5 b-radius-2">
-                        <section
-                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
-                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
-                        </section>
-                        <button
-                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
-                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
-                            <p class="wishlist-text">Add to wishlist</p>
-                        </button>
-                        <section class="card-content p-5 pb-0">
-                            <h3 class="card-title">Puma White Sneakers</h3>
-                            <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
-                                <p class="p-0 m-0">Rs. 2999</p>
-                                <strike class="p-0 m-0">5999</strike>
-                                <p class="discount p-0 m-0">(50%)</p>
-                            </span>
-                        </section>
-                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
-                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
-                                <p>4</p>
-                                <span class="review-star">
-                                    <i class="fas fa-star"></i>
+                            </section>
+                            <button
+                                class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                            </button>
+                        </article>
+                    </a>
+                    <a href="https://ripple-store.netlify.app/pages/product-details/product-details.html"
+                        class="no-link">
+                        <article class="card vertical card-shadow p-5 b-radius-2">
+                            <section
+                                class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
+                                <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                    alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
+                            </section>
+                            <button
+                                class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
+                                <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                <p class="wishlist-text">Add to wishlist</p>
+                            </button>
+                            <section class="card-content p-5 pb-0">
+                                <h3 class="card-title">Puma White Sneakers</h3>
+                                <p class="card-category">Men Sneakers</p>
+                                <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                    <p class="p-0 m-0">Rs. 2999</p>
+                                    <strike class="p-0 m-0">5999</strike>
+                                    <p class="discount p-0 m-0">(50%)</p>
                                 </span>
-                            </span>
-                        </section>
-                        <button
-                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
-                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
-                            <p class="cart-text">Add to Cart</p>
-                        </button>
-                    </article>
-                    <article class="card vertical card-shadow p-5 b-radius-2">
-                        <section
-                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
-                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
-                        </section>
-                        <button
-                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
-                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
-                            <p class="wishlist-text">Add to wishlist</p>
-                        </button>
-                        <section class="card-content p-5 pb-0">
-                            <h3 class="card-title">Puma White Sneakers</h3>
-                            <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
-                                <p class="p-0 m-0">Rs. 2999</p>
-                                <strike class="p-0 m-0">5999</strike>
-                                <p class="discount p-0 m-0">(50%)</p>
-                            </span>
-                        </section>
-                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
-                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
-                                <p>4</p>
-                                <span class="review-star">
-                                    <i class="fas fa-star"></i>
+                            </section>
+                            <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                                <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
+                                    <p>4</p>
+                                    <span class="review-star">
+                                        <i class="fas fa-star"></i>
+                                    </span>
                                 </span>
-                            </span>
-                        </section>
-                        <button
-                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
-                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
-                            <p class="cart-text">Add to Cart</p>
-                        </button>
-                    </article>
-                    <article class="card vertical card-shadow p-5 b-radius-2">
-                        <section
-                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
-                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
-                        </section>
-                        <button
-                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
-                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
-                            <p class="wishlist-text">Add to wishlist</p>
-                        </button>
-                        <section class="card-content p-5 pb-0">
-                            <h3 class="card-title">Puma White Sneakers</h3>
-                            <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
-                                <p class="p-0 m-0">Rs. 2999</p>
-                                <strike class="p-0 m-0">5999</strike>
-                                <p class="discount p-0 m-0">(50%)</p>
-                            </span>
-                        </section>
-                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
-                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
-                                <p>4</p>
-                                <span class="review-star">
-                                    <i class="fas fa-star"></i>
+                            </section>
+                            <button
+                                class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                            </button>
+                        </article>
+                    </a>
+                    <a href="https://ripple-store.netlify.app/pages/product-details/product-details.html"
+                        class="no-link">
+                        <article class="card vertical card-shadow p-5 b-radius-2">
+                            <section
+                                class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
+                                <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                    alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
+                            </section>
+                            <button
+                                class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
+                                <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                <p class="wishlist-text">Add to wishlist</p>
+                            </button>
+                            <section class="card-content p-5 pb-0">
+                                <h3 class="card-title">Puma White Sneakers</h3>
+                                <p class="card-category">Men Sneakers</p>
+                                <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                    <p class="p-0 m-0">Rs. 2999</p>
+                                    <strike class="p-0 m-0">5999</strike>
+                                    <p class="discount p-0 m-0">(50%)</p>
                                 </span>
-                            </span>
-                        </section>
-                        <button
-                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
-                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
-                            <p class="cart-text">Add to Cart</p>
-                        </button>
-                    </article>
-                    <article class="card vertical card-shadow p-5 b-radius-2">
-                        <section
-                            class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
-                            <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
-                        </section>
-                        <button
-                            class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
-                            <span class="wishlist-icon"><i class="far fa-heart"></i></span>
-                            <p class="wishlist-text">Add to wishlist</p>
-                        </button>
-                        <section class="card-content p-5 pb-0">
-                            <h3 class="card-title">Puma White Sneakers</h3>
-                            <p class="card-category">Men Sneakers</p>
-                            <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
-                                <p class="p-0 m-0">Rs. 2999</p>
-                                <strike class="p-0 m-0">5999</strike>
-                                <p class="discount p-0 m-0">(50%)</p>
-                            </span>
-                        </section>
-                        <section class="card-tag m-2 px-1 py-0 b-radius-1">
-                            <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
-                                <p>4</p>
-                                <span class="review-star">
-                                    <i class="fas fa-star"></i>
+                            </section>
+                            <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                                <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
+                                    <p>4</p>
+                                    <span class="review-star">
+                                        <i class="fas fa-star"></i>
+                                    </span>
                                 </span>
-                            </span>
-                        </section>
-                        <button
-                            class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
-                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
-                            <p class="cart-text">Add to Cart</p>
-                        </button>
-                    </article>
+                            </section>
+                            <button
+                                class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                            </button>
+                        </article>
+                    </a>
+                    <a href="https://ripple-store.netlify.app/pages/product-details/product-details.html"
+                        class="no-link">
+                        <article class="card vertical card-shadow p-5 b-radius-2">
+                            <section
+                                class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
+                                <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                    alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
+                            </section>
+                            <button
+                                class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
+                                <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                <p class="wishlist-text">Add to wishlist</p>
+                            </button>
+                            <section class="card-content p-5 pb-0">
+                                <h3 class="card-title">Puma White Sneakers</h3>
+                                <p class="card-category">Men Sneakers</p>
+                                <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                    <p class="p-0 m-0">Rs. 2999</p>
+                                    <strike class="p-0 m-0">5999</strike>
+                                    <p class="discount p-0 m-0">(50%)</p>
+                                </span>
+                            </section>
+                            <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                                <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
+                                    <p>4</p>
+                                    <span class="review-star">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </span>
+                            </section>
+                            <button
+                                class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                            </button>
+                        </article>
+                    </a>
+                    <a href="https://ripple-store.netlify.app/pages/product-details/product-details.html"
+                        class="no-link">
+                        <article class="card vertical card-shadow p-5 b-radius-2">
+                            <section
+                                class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
+                                <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                    alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
+                            </section>
+                            <button
+                                class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
+                                <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                <p class="wishlist-text">Add to wishlist</p>
+                            </button>
+                            <section class="card-content p-5 pb-0">
+                                <h3 class="card-title">Puma White Sneakers</h3>
+                                <p class="card-category">Men Sneakers</p>
+                                <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                    <p class="p-0 m-0">Rs. 2999</p>
+                                    <strike class="p-0 m-0">5999</strike>
+                                    <p class="discount p-0 m-0">(50%)</p>
+                                </span>
+                            </section>
+                            <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                                <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
+                                    <p>4</p>
+                                    <span class="review-star">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </span>
+                            </section>
+                            <button
+                                class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                            </button>
+                        </article>
+                    </a>
+                    <a href="https://ripple-store.netlify.app/pages/product-details/product-details.html"
+                        class="no-link">
+                        <article class="card vertical card-shadow p-5 b-radius-2">
+                            <section
+                                class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
+                                <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                    alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
+                            </section>
+                            <button
+                                class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
+                                <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                <p class="wishlist-text">Add to wishlist</p>
+                            </button>
+                            <section class="card-content p-5 pb-0">
+                                <h3 class="card-title">Puma White Sneakers</h3>
+                                <p class="card-category">Men Sneakers</p>
+                                <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                    <p class="p-0 m-0">Rs. 2999</p>
+                                    <strike class="p-0 m-0">5999</strike>
+                                    <p class="discount p-0 m-0">(50%)</p>
+                                </span>
+                            </section>
+                            <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                                <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
+                                    <p>4</p>
+                                    <span class="review-star">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </span>
+                            </section>
+                            <button
+                                class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                            </button>
+                        </article>
+                    </a>
+                    <a href="https://ripple-store.netlify.app/pages/product-details/product-details.html"
+                        class="no-link">
+                        <article class="card vertical card-shadow p-5 b-radius-2">
+                            <section
+                                class="card-image-container flex-row justify-content-center align-center flex-wrap b-radius-2">
+                                <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                    alt="Puma Sneakers" class="card-image b-radius-2 mt-2" />
+                            </section>
+                            <button
+                                class="outline-btn p-0 b-radius-2 text-bold card-wishlist m-5 flex-row justify-content-center align-center flex-gap-1">
+                                <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                <p class="wishlist-text">Add to wishlist</p>
+                            </button>
+                            <section class="card-content p-5 pb-0">
+                                <h3 class="card-title">Puma White Sneakers</h3>
+                                <p class="card-category">Men Sneakers</p>
+                                <span class="card-price-tag mt-3 flex-row align-center flex-gap-half text-bold">
+                                    <p class="p-0 m-0">Rs. 2999</p>
+                                    <strike class="p-0 m-0">5999</strike>
+                                    <p class="discount p-0 m-0">(50%)</p>
+                                </span>
+                            </section>
+                            <section class="card-tag m-2 px-1 py-0 b-radius-1">
+                                <span class="card-review m-3 p-0 text-bold flex-row align-center flex-gap-half">
+                                    <p>4</p>
+                                    <span class="review-star">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </span>
+                            </section>
+                            <button
+                                class="primary-btn p-0 b-radius-2 text-bold flex-row justify-content-center align-center flex-gap-1">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                            </button>
+                        </article>
+                    </a>
                 </div>
                 <div
                     class="pagination flex-row justify-content-center align-center p-10 my-10 b-radius-4 flex-gap-1 w-100 ">
@@ -576,7 +599,7 @@
                 </li>
                 <li class="rui-drawer-content">
                     <a href="https://ripple-store.netlify.app/pages/products/products.html"
-                        class="rui-drawer-links p-5 flex-row flex-gap-1 align-center justify-content-start">
+                        class="rui-drawer-links p-5 flex-row flex-gap-1 align-center justify-content-start text-bold text-cta-color">
                         <span class="tabs-icon"><i class="fa-solid fa-bag-shopping social"></i></span>
                         <p class="tabs-btn-text">Products</p>
                     </a>

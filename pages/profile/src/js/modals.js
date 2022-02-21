@@ -14,9 +14,7 @@ const handleCardButtons = (modal) => {
 };
 
 const handleModal = () => {
-	const modal = document.querySelector(
-		".profile-tabs .modal-container"
-	);
+	const modal = document.querySelector(".profile-tabs .modal-container");
 	const addNewAddressBtn = document.querySelector(
 		".profile-tabs .profile-header .address-btn"
 	);
@@ -26,9 +24,7 @@ const handleModal = () => {
 	const saveBtn = document.querySelector(
 		".profile-tabs .modal-container .save-btn"
 	);
-	const addressForm = document.querySelector(
-		".profile-tabs .input-form"
-	);
+	const addressForm = document.querySelector(".profile-tabs .input-form");
 	const addAddressPath = document.querySelector(
 		".profile-tabs .address-container .profile-container ul"
 	);
@@ -43,22 +39,22 @@ const handleModal = () => {
 
 	saveBtn.addEventListener("click", () => {
 		const formData = new FormData(addressForm);
-		addAddressPath.innerHTML += `<li class="no-list">
-      <article class="card basic-card .flex-jc-ac card-shadow">
-        <h2 class="name">${formData.get("name")}</h2>
-        <p class="address">
-        ${formData.get("address")}
-        </p>
-        <p class="city">${formData.get("city")}</p>
-        <p class="state">${formData.get("state")}</p>
-        <p class="country">${formData.get("country")}</p>
-        <p class="pincode">${formData.get("pincode")}</p>
-        <section class="card-footer">
-          <button class="primary-btn edit-btn">Edit</button>
-          <button class="primary-btn outline delete-btn">Delete</button>
-        </section>
-      </article>
-    </li>`;
+		addAddressPath.innerHTML += `<li class="no-list my-5">
+		<article class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-100 h-auto">
+		  <h2 class="name p-2">${formData.get("name")}</h2>
+		  <p class="address p-2">
+		  ${formData.get("address")}
+		  </p>
+		  <p class="city p-2">${formData.get("city")}</p>
+		  <p class="state p-2">${formData.get("state")}</p>
+		  <p class="country p-2">${formData.get("country")}</p>
+		  <p class="pincode p-2">${formData.get("pincode")}</p>
+		  <section class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0">
+			  <button class="primary-btn edit-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Edit</button>
+			  <button class="outline-btn delete-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Delete</button>
+		  </section>
+		</article>
+		</li`;
 		handleCardButtons(modal);
 		modal.style.display = "none";
 	});

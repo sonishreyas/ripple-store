@@ -17,56 +17,58 @@
     <div class="grid-3-rows">
 
         <!-- || Header -->
-        <header
-            class="header header-shadow flex-row justify-content-space-between align-centerflex-row justify-content-space-between align-center">
-            <div class="brand-info flex-row justify-content-center align-center flex-gap-1">
-                <section>
-                    <i class="fas fa-bars header-nav-icon"></i>
-                </section>
-                <a href="https://ripple-store.netlify.app/" class="no-link">
-                    <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png"
-                        alt="Logo of ripple UI" class="brand-logo" />
-                    <sub class="brand-name">Ripple Store</sub>
-                </a>
-                <ul class="no-list spaced-list header-nav flex-row align-center flex-gap-1">
-                    <li><a href="https://ripple-store.netlify.app/" class="no-link">Home</a></li>
-                    <li><a href="https://ripple-store.netlify.app/pages/products/products.html"
-                            class="no-link">Products</a></li>
-                </ul>
-            </div>
-            <div class="social-icon-container flex-row align-center flex-gap-2">
-                <ul class="no-list spaced-list flex-row align-center flex-gap-2 mx-5">
-                    <li>
-                        <form class="input-form flex-column flex-gap-1 flex-grow-1 flex-wrap h-auto w-100">
-                            <section class="input-container input-with-icon flex-column b-radius-2 m-5">
-                                <input id="search" class="textbox-content p-5" type="text" name="search"
-                                    placeholder="Search..." aria-label="Search Products here" />
-                                <i class="fas fa-search search-icon"></i>
-                            </section>
-                        </form>
-                    </li>
-                    <li class="dropdown">
-                        <a href="https://ripple-store.netlify.app/pages/profile/profile.html" aria-label="View Profile"
-                            class="no-link"><i class="fas fa-user social"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://ripple-store.netlify.app/pages/wishlist/wishlist.html"
-                            aria-label="View Wishlist" class="no-link"><i class="fas fa-heart social"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://ripple-store.netlify.app/pages/cart/cart.html" aria-label="View Cart"
-                            class="no-link"><i class="fas fa-shopping-cart social"></i></a>
-                    </li>
-                    <li>
-                        <i class="fas fa-sun theme-icon social" aria-label="dark/light theme icon"></i>
-                    </li>
-                    <li><a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
-                            target="_blank" aria-label="Login/Register"
-                            class="no-link-decoration primary-btn p-3 b-radius-2 my-0 text-bold text-tertiary-color">Login
-                        </a>
-                    </li>
-                </ul>
+        <header class="header header-shadow flex-column">
+            <div class="flex-row justify-content-space-between align-center w-100">
+                <div class="brand-info flex-row justify-content-center align-center flex-gap-1 m-5">
+                    <section>
+                        <i class="fas fa-bars header-nav-icon"></i>
+                    </section>
+                    <a href="https://ripple-store.netlify.app/" class="no-link header-brand">
+                        <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png"
+                            alt="Logo of ripple UI" class="brand-logo" />
+                        <sub class="brand-name">Ripple Store</sub>
+                    </a>
+                    <ul class="no-list spaced-list header-nav flex-row align-center flex-gap-1">
+                        <li><a href="https://ripple-store.netlify.app/" class="no-link">Home</a></li>
+                        <li><a href="https://ripple-store.netlify.app/pages/products/products.html"
+                                class="no-link">Products</a></li>
+                    </ul>
+                </div>
+                <div class="social-icon-container flex-row align-center flex-gap-2">
+                    <ul class="no-list spaced-list flex-row align-center flex-gap-2 mx-5">
+                        <li class="search-bar">
+                            <form class="input-form flex-column flex-gap-1 flex-grow-1 flex-wrap h-auto w-100">
+                                <section class="input-container input-with-icon flex-column b-radius-2 m-5">
+                                    <input id="search" class="textbox-content p-5" type="text" name="search"
+                                        placeholder="Search..." aria-label="Search Products here" />
+                                    <i class="fas fa-search search-icon"></i>
+                                </section>
+                            </form>
+                        </li>
+                        <li class="header-nav-icons">
+                            <a href="https://ripple-store.netlify.app/pages/profile/profile.html"
+                                aria-label="View Profile" class="no-link"><i class="fas fa-user social"></i></a>
+                        </li>
+                        <li class="header-nav-icons">
+                            <a href="https://ripple-store.netlify.app/pages/wishlist/wishlist.html"
+                                aria-label="View Wishlist" class="no-link"><i class="fas fa-heart social"></i>
+                            </a>
+                        </li>
+                        <li class="header-nav-icons">
+                            <a href="https://ripple-store.netlify.app/pages/cart/cart.html" aria-label="View Cart"
+                                class="no-link"><i class="fas fa-shopping-cart social"></i></a>
+                        </li>
+                        <li>
+                            <i class="fas fa-sun theme-icon social" aria-label="dark/light theme icon"></i>
+                        </li>
+                        <li class="header-nav-icons">
+                            <a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
+                                target="_blank" aria-label="Login/Register"
+                                class="no-link-decoration primary-btn p-3 b-radius-2 my-0 text-bold text-tertiary-color">Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -93,17 +95,18 @@
                             <p class="tabs-btn-text">Settings</p>
                         </button>
                     </article>
-                    <div class="vertical-tabs-content p-5 b-radius-2 my-5 mx-0 flex-grow-1 flex-gap-1">
-                        <div class="profile-container p-5 flex-gap-1 b-radius-2 ">
+                    <div
+                        class="vertical-tabs-content p-5 b-radius-2 my-5 mx-0 flex-grow-1 flex-gap-1 user-details-container">
+                        <div class="profile-container py-5 flex-gap-1 b-radius-2 ">
                             <div
-                                class="profile-header flex-row justify-content-space-between align-center flex-wrap p-5 my-0 mx-5">
+                                class="profile-header flex-row justify-content-space-between align-center flex-wrap py-5 my-0 mx-2">
                                 <h1 class="p-2 my-2 mx-0">Profile Details</h1>
                             </div>
-                            <ul class="profile-list p-5">
+                            <ul class="profile-list">
                                 <li class="no-list">
                                     <article
-                                        class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-100 h-auto">
-                                        <table class="table my-5 w-100 h-auto">
+                                        class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-max-content h-auto">
+                                        <table class="table my-5 w-max-content h-auto">
                                             <tbody class="w-100">
                                                 <tr class="table-row m-3 w-100 h-auto">
                                                     <th class="table-head p-3">Name</th>
@@ -180,26 +183,26 @@
                                 <li class="no-list">
                                     <article
                                         class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-100 h-auto">
-                                        <h2 class="name">Shreyas Soni</h2>
-                                        <p class="address">
+                                        <h2 class="name p-2">Shreyas Soni</h2>
+                                        <p class="address p-2">
                                             D-203, Nisarg Nirman, Kokne Chowk Pimple Saudagar
                                         </p>
-                                        <p class="city">Pune</p>
-                                        <p class="state">Maharashtra</p>
-                                        <p class="country">India</p>
-                                        <p class="pincode">411027</p>
+                                        <p class="city p-2">Pune</p>
+                                        <p class="state p-2">Maharashtra</p>
+                                        <p class="country p-2">India</p>
+                                        <p class="pincode p-2">411027</p>
                                         <section
-                                            class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0">
+                                            class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0 ">
                                             <button
-                                                class="primary-btn edit-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Edit</button>
+                                                class="primary-btn edit-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1 w-100">Edit</button>
                                             <button
-                                                class="outline-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Delete</button>
+                                                class="outline-btn delete-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1 w-100">Delete</button>
                                         </section>
                                     </article>
                                 </li>
                             </ul>
 
-                            <div class="modal-container modal-center text-center">
+                            <div class="modal-container modal-center text-center p-5 m-5 b-radius-2">
                                 <h3 class="p-2 my-2 mx-0">Add a new Address</h3>
                                 <form class="input-form flex-column flex-gap-1 flex-grow-1 flex-wrap">
                                     <section class="input-container flex-column m-5">
@@ -261,17 +264,58 @@
         </main>
 
         <!-- || Nav Bar -->
-        <nav class="nav">
+        <nav class="nav nav-shadow">
             <ul class="rui-drawer-content--list no-list">
-                <li class="rui-drawer-content rui-drawer-header inactive">
+                <li class="rui-drawer-content rui-drawer-header flex-row align-center justify-content-space-between">
                     <section>
-                        <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
-                            alt="Logo of ripple UI" class="brand-logo" />
-                        <sub class="brand-name">Ripple UI</sub>
+                        <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png"
+                            alt="Logo of ripple store" class="brand-logo" />
+                        <sub class="brand-name">Ripple Store</sub>
                     </section>
                     <section>
                         <i class="fas fa-angle-left close-drawer"></i>
                     </section>
+                </li>
+                <li class="rui-drawer-content">
+                    <a href="https://ripple-store.netlify.app/"
+                        class="rui-drawer-links p-5 flex-row flex-gap-1 align-center justify-content-start">
+                        <span class="tabs-icon"><i class="fa-solid fa-house-chimney social"></i></i></span>
+                        <p class="tabs-btn-text">Home</p>
+                    </a>
+                </li>
+                <li class="rui-drawer-content">
+                    <a href="https://ripple-store.netlify.app/pages/products/products.html"
+                        class="rui-drawer-links p-5 flex-row flex-gap-1 align-center justify-content-start">
+                        <span class="tabs-icon"><i class="fa-solid fa-bag-shopping social"></i></span>
+                        <p class="tabs-btn-text">Products</p>
+                    </a>
+                </li>
+                <li class="rui-drawer-content">
+                    <a href="https://ripple-store.netlify.app/pages/profile/profile.html"
+                        class="rui-drawer-links p-5 flex-row flex-gap-1 align-center justify-content-start text-bold text-cta-color">
+                        <span class="tabs-icon"><i class="fa-solid fa-user social"></i></span>
+                        <p class="tabs-btn-text">Profile</p>
+                    </a>
+                </li>
+                <li class="rui-drawer-content">
+                    <a href="https://ripple-store.netlify.app/pages/wishlist/wishlist.html"
+                        class="rui-drawer-links p-5 flex-row flex-gap-1 align-center justify-content-start">
+                        <span class="tabs-icon"><i class="fas fa-heart social"></i></span>
+                        <p class="tabs-btn-text">Wishlist</p>
+                    </a>
+                </li>
+                <li class="rui-drawer-content">
+                    <a href="https://ripple-store.netlify.app/pages/cart/cart.html"
+                        class="rui-drawer-links p-5 flex-row flex-gap-1 align-center justify-content-start">
+                        <span class="tabs-icon"><i class="fas fa-shopping-cart social"></i></span>
+                        <p class="tabs-btn-text">Cart</p>
+                    </a>
+                </li>
+                <li class="rui-drawer-content m-auto text-center">
+                    <a href="https://ripple-store.netlify.app/pages/authentication/authentication.html"
+                        aria-label="Login/Register"
+                        class="no-link-decoration primary-btn p-3 b-radius-2 my-0 text-bold text-tertiary-color">Login
+                    </a>
                 </li>
             </ul>
         </nav>
